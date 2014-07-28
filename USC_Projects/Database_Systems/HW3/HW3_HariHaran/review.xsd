@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="reviews">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="review" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Set of Book Reviews</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:integer"/>
+							<xs:element name="title" type="xs:string"/>
+							<xs:element name="rating">
+								<xs:simpleType>
+									<xs:restriction base="xs:integer">
+										<xs:minInclusive value="1"/>
+										<xs:maxInclusive value="5"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="reviewer" type="xs:string"/>
+							<xs:element name="description" type="xs:string" minOccurs="0"/>
+							<xs:element name="date">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="[0-9][0-9][0-9][0-9]/[0-9][0-9]/[0-9][0-9]"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

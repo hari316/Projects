@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="books">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="book" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>List of Books</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:integer"/>
+							<xs:element name="title" type="xs:string"/>
+							<xs:element name="author" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="price" type="xs:string"/>
+							<xs:element name="isbn">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{1}-\d{5}-\d{3}-\d{1}"/>
+										<xs:pattern value="\d{1}-\d{3}-\d{5}-\d{1}"/>
+										<xs:pattern value="\d{1}-\d{2}-\d{6}-\d{1}"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="date">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="[0-9][0-9][0-9][0-9]/[0-9][0-9]/[0-9][0-9]"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

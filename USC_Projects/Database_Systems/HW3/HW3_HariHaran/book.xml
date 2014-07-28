@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<books>
+	<book>
+		<id>6</id>
+		<title>Allegiant</title>
+		<author>Veronica Roth</author>
+		<price>31.57</price>
+		<isbn>6-57399-410-2</isbn>
+		<date>2013/10/22</date>
+	</book>
+	<book>
+		<id>4</id>
+		<title>Alex Cross, Run</title>
+		<author>James Patterson</author>
+		<price>28.99</price>
+		<isbn>7-31-609751-9</isbn>
+		<date>2013/02/18</date>
+	</book>
+	<book>
+		<id>3</id>
+		<title>Life After Life</title>
+		<author>Kate Atkinson</author>
+		<price>27.99</price>
+		<isbn>4-316-17648-6</isbn>
+		<date>2013/04/02</date>
+	</book>
+	<book>
+		<id>9</id>
+		<title>A Game of Thrones</title>
+		<author>George R.R. Martin</author>
+		<price>27.75</price>
+		<isbn>8-93110-553-4</isbn>
+		<date>2013/10/29</date>
+	</book>
+	<book>
+		<id>8</id>
+		<title>Still Life with Bread Crumbs</title>
+		<author>Anna Quindlen,Sue Monk Kidd</author>
+		<price>26.4</price>
+		<isbn>5-63-160433-7</isbn>
+		<date>2014/01/28</date>
+	</book>
+	<book>
+		<id>10</id>
+		<title>A Song of Ice and Fire</title>
+		<author>George R.R. Martin</author>
+		<price>24.6</price>
+		<isbn>8-931-32108-1</isbn>
+		<date>2014/01/15</date>
+	</book>
+	<book>
+		<id>1</id>
+		<title>A Heartbreaking Work of Staggering Genius</title>
+		<author>Dave Eggers</author>
+		<price>22.75</price>
+		<isbn>0-37-572578-4</isbn>
+		<date>2001/02/13</date>
+	</book>
+	<book>
+		<id>7</id>
+		<title>The Winter People</title>
+		<author>Jennifer McMahon,Joseph Bruchac</author>
+		<price>15.88</price>
+		<isbn>9-385-95384-9</isbn>
+		<date>2014/02/11</date>
+	</book>
+	<book>
+		<id>5</id>
+		<title>Tenth of December</title>
+		<author>George Saunders</author>
+		<price>14.64</price>
+		<isbn>1-81299-380-6</isbn>
+		<date>2014/02/10</date>
+	</book>
+	<book>
+		<id>2</id>
+		<title>All the President's Men</title>
+		<author>Bob Woodward, Carl Bernstein</author>
+		<price>10.51</price>
+		<isbn>6-718-49441-2</isbn>
+		<date>1994/06/16</date>
+	</book>
+</books>
