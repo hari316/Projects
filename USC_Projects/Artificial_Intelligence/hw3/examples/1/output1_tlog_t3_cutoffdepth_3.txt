@@ -1,0 +1,18 @@
+Player,Action,Destination,Depth,Value,Alpha,Beta,CUT-OFF?
+N/A,N/A,N/A,0,-Infinity,-Infinity,Infinity
+Union,Force March,I,1,Infinity,-Infinity,Infinity
+Confederacy,Paratroop Drop,L,2,50.0,-Infinity,Infinity
+Union,Force March,I,1,50.0,-Infinity,50.0
+N/A,N/A,N/A,0,50.0,50.0,Infinity
+Union,Force March,L,1,Infinity,50.0,Infinity
+Confederacy,Force March,I,2,-48.0,50.0,Infinity
+Union,Force March,L,1,-48.0,50.0,-48.0,CUT-OFF
+N/A,N/A,N/A,0,50.0,50.0,Infinity
+Union,Paratroop Drop,I,1,Infinity,50.0,Infinity
+Confederacy,Paratroop Drop,L,2,-2.0,50.0,Infinity
+Union,Paratroop Drop,I,1,-2.0,50.0,-2.0,CUT-OFF
+N/A,N/A,N/A,0,50.0,50.0,Infinity
+Union,Paratroop Drop,L,1,Infinity,50.0,Infinity
+Confederacy,Force March,I,2,-48.0,50.0,Infinity
+Union,Paratroop Drop,L,1,-48.0,50.0,-48.0,CUT-OFF
+N/A,N/A,N/A,0,50.0,50.0,Infinity

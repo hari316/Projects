@@ -1,0 +1,11 @@
+Player,Action,Destination,Depth,Value
+Union,Force March,H,1,14.0
+Union,Force March,N,1,29.0
+Union,Paratroop Drop,A,1,8.0
+Union,Paratroop Drop,B,1,9.0
+Union,Paratroop Drop,E,1,11.0
+Union,Paratroop Drop,G,1,13.0
+Union,Paratroop Drop,H,1,14.0
+Union,Paratroop Drop,L,1,10.0
+Union,Paratroop Drop,M,1,13.0
+Union,Paratroop Drop,N,1,29.0

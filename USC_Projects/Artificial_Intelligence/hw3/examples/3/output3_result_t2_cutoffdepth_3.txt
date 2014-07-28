@@ -1,0 +1,245 @@
+TURN = 0
+Player = N/A
+Action = N/A
+Destination = N/A
+Union,{},0.0
+Confederacy,{},0.0
+----------------------------------------------
+TURN = 1
+Player = Union
+Action = Paratroop Drop
+Destination = L
+Union,{L},98.0
+Confederacy,{},0.0
+----------------------------------------------
+TURN = 2
+Player = Confederacy
+Action = Paratroop Drop
+Destination = K
+Union,{L},98.0
+Confederacy,{K},94.0
+----------------------------------------------
+TURN = 3
+Player = Union
+Action = Paratroop Drop
+Destination = I
+Union,{I,L},185.0
+Confederacy,{K},94.0
+----------------------------------------------
+TURN = 4
+Player = Confederacy
+Action = Paratroop Drop
+Destination = X
+Union,{I,L},185.0
+Confederacy,{K,X},184.0
+----------------------------------------------
+TURN = 5
+Player = Union
+Action = Force March
+Destination = T
+Union,{I,L,T},267.0
+Confederacy,{K,X},184.0
+----------------------------------------------
+TURN = 6
+Player = Confederacy
+Action = Paratroop Drop
+Destination = C
+Union,{I,L,T},267.0
+Confederacy,{C,K,X},267.0
+----------------------------------------------
+TURN = 7
+Player = Union
+Action = Paratroop Drop
+Destination = BC
+Union,{BC,I,L,T},347.0
+Confederacy,{C,K,X},267.0
+----------------------------------------------
+TURN = 8
+Player = Confederacy
+Action = Paratroop Drop
+Destination = U
+Union,{BC,I,L,T},347.0
+Confederacy,{C,K,U,X},335.0
+----------------------------------------------
+TURN = 9
+Player = Union
+Action = Force March
+Destination = V
+Union,{BC,I,L,T,U,V},469.0
+Confederacy,{C,K,X},267.0
+----------------------------------------------
+TURN = 10
+Player = Confederacy
+Action = Force March
+Destination = P
+Union,{BC,I,L,T,U,V},469.0
+Confederacy,{C,K,P,X},329.0
+----------------------------------------------
+TURN = 11
+Player = Union
+Action = Paratroop Drop
+Destination = S
+Union,{BC,I,L,S,T,U,V},486.0
+Confederacy,{C,K,P,X},329.0
+----------------------------------------------
+TURN = 12
+Player = Confederacy
+Action = Force March
+Destination = B
+Union,{BC,I,L,S,T,V},418.0
+Confederacy,{B,C,K,P,U,X},438.0
+----------------------------------------------
+TURN = 13
+Player = Union
+Action = Paratroop Drop
+Destination = W
+Union,{BC,I,L,S,T,V,W},448.0
+Confederacy,{B,C,K,P,U,X},438.0
+----------------------------------------------
+TURN = 14
+Player = Confederacy
+Action = Force March
+Destination = Q
+Union,{BC,I,L,S,T,V},418.0
+Confederacy,{B,C,K,P,Q,U,W,X},524.0
+----------------------------------------------
+TURN = 15
+Player = Union
+Action = Force March
+Destination = R
+Union,{BC,C,I,K,L,P,Q,R,S,T,V},770.0
+Confederacy,{B,U,W,X},229.0
+----------------------------------------------
+TURN = 16
+Player = Confederacy
+Action = Force March
+Destination = F
+Union,{BC,C,I,K,L,P,Q,R,T,V},753.0
+Confederacy,{B,F,S,U,W,X},297.0
+----------------------------------------------
+TURN = 17
+Player = Union
+Action = Force March
+Destination = A
+Union,{A,BC,C,I,K,L,P,Q,R,S,T,V},821.0
+Confederacy,{B,F,U,W,X},280.0
+----------------------------------------------
+TURN = 18
+Player = Confederacy
+Action = Paratroop Drop
+Destination = AC
+Union,{A,BC,C,I,K,L,P,Q,R,S,T,V},821.0
+Confederacy,{AC,B,F,U,W,X},336.0
+----------------------------------------------
+TURN = 19
+Player = Union
+Action = Force March
+Destination = N
+Union,{A,BC,C,I,K,L,N,P,Q,R,S,T,V},871.0
+Confederacy,{AC,B,F,U,W,X},336.0
+----------------------------------------------
+TURN = 20
+Player = Confederacy
+Action = Paratroop Drop
+Destination = E
+Union,{A,BC,C,I,K,L,N,P,Q,R,S,T,V},871.0
+Confederacy,{AC,B,E,F,U,W,X},391.0
+----------------------------------------------
+TURN = 21
+Player = Union
+Action = Paratroop Drop
+Destination = G
+Union,{A,BC,C,G,I,K,L,N,P,Q,R,S,T,V},921.0
+Confederacy,{AC,B,E,F,U,W,X},391.0
+----------------------------------------------
+TURN = 22
+Player = Confederacy
+Action = Paratroop Drop
+Destination = BD
+Union,{A,BC,C,G,I,K,L,N,P,Q,R,S,T,V},921.0
+Confederacy,{AC,B,BD,E,F,U,W,X},435.0
+----------------------------------------------
+TURN = 23
+Player = Union
+Action = Force March
+Destination = BA
+Union,{A,BA,BC,BD,C,G,I,K,L,N,P,Q,R,S,T,V},979.0
+Confederacy,{AC,B,E,F,U,W,X},391.0
+----------------------------------------------
+TURN = 24
+Player = Confederacy
+Action = Paratroop Drop
+Destination = O
+Union,{A,BA,BC,BD,C,G,I,K,L,N,P,Q,R,S,T,V},979.0
+Confederacy,{AC,B,E,F,O,U,W,X},435.0
+----------------------------------------------
+TURN = 25
+Player = Union
+Action = Force March
+Destination = Z
+Union,{A,BA,BC,BD,C,G,I,K,L,N,O,P,Q,R,S,T,V,Z},1054.0
+Confederacy,{AC,B,E,F,U,W,X},391.0
+----------------------------------------------
+TURN = 26
+Player = Confederacy
+Action = Force March
+Destination = H
+Union,{A,BA,BC,BD,C,G,I,K,L,N,O,P,Q,R,S,T,V,Z},1054.0
+Confederacy,{AC,B,E,F,H,U,W,X},434.0
+----------------------------------------------
+TURN = 27
+Player = Union
+Action = Force March
+Destination = BB
+Union,{A,BA,BB,BC,BD,C,G,I,K,L,N,O,P,Q,R,S,T,V,Z},1080.0
+Confederacy,{AC,B,E,F,H,U,W,X},434.0
+----------------------------------------------
+TURN = 28
+Player = Confederacy
+Action = Paratroop Drop
+Destination = D
+Union,{A,BA,BB,BC,BD,C,G,I,K,L,N,O,P,Q,R,S,T,V,Z},1080.0
+Confederacy,{AC,B,D,E,F,H,U,W,X},470.0
+----------------------------------------------
+TURN = 29
+Player = Union
+Action = Force March
+Destination = M
+Union,{A,BA,BB,BC,BD,C,D,G,I,K,L,M,N,O,P,Q,R,S,T,V,Z},1121.0
+Confederacy,{AC,B,E,F,H,U,W,X},434.0
+----------------------------------------------
+TURN = 30
+Player = Confederacy
+Action = Paratroop Drop
+Destination = J
+Union,{A,BA,BB,BC,BD,C,D,G,I,K,L,M,N,O,P,Q,R,S,T,V,Z},1121.0
+Confederacy,{AC,B,E,F,H,J,U,W,X},460.0
+----------------------------------------------
+TURN = 31
+Player = Union
+Action = Paratroop Drop
+Destination = AA
+Union,{A,AA,BA,BB,BC,BD,C,D,G,I,K,L,M,N,O,P,Q,R,S,T,V,Z},1146.0
+Confederacy,{AC,B,E,F,H,J,U,W,X},460.0
+----------------------------------------------
+TURN = 32
+Player = Confederacy
+Action = Paratroop Drop
+Destination = AD
+Union,{A,AA,BA,BB,BC,BD,C,D,G,I,K,L,M,N,O,P,Q,R,S,T,V,Z},1146.0
+Confederacy,{AC,AD,B,E,F,H,J,U,W,X},469.0
+----------------------------------------------
+TURN = 33
+Player = Union
+Action = Force March
+Destination = AB
+Union,{A,AA,AB,AD,BA,BB,BC,BD,C,D,G,I,K,L,M,N,O,P,Q,R,S,T,V,Z},1156.0
+Confederacy,{AC,B,E,F,H,J,U,W,X},460.0
+----------------------------------------------
+TURN = 34
+Player = Confederacy
+Action = Force March
+Destination = Y
+Union,{A,AA,AB,AD,BA,BB,BC,BD,C,D,G,I,K,L,M,N,O,P,Q,R,S,T,V,Z},1156.0
+Confederacy,{AC,B,E,F,H,J,U,W,X,Y},466.0
+----------------------------------------------

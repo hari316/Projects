@@ -1,0 +1,5 @@
+Player,Action,Destination,Depth,Value
+Union,Force March,I,1,57.0
+Union,Force March,L,1,0.0
+Union,Paratroop Drop,I,1,5.0
+Union,Paratroop Drop,L,1,0.0

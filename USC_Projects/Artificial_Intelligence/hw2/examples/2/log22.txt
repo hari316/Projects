@@ -1,0 +1,46 @@
+<Queue of Goals>#Relevant Rules/Fact#New Goal Introduced
+A # A :- B # B
+B # B :- C,F # C, F
+C # C # N/A
+F # F :- H,C # H, C
+H # H :- C,D # C, D
+C # C # N/A
+D # D :- C,G,B # C, G, B
+C # C # N/A
+G # N/A # N/A
+F # F :- E # E
+E # E :- C # C
+C # C # N/A
+-------------------------------------------------------------
+B # B :- C,F # C, F
+C # C # N/A
+F # F :- H,C # H, C
+H # H :- C,D # C, D
+C # C # N/A
+D # D :- C,G,B # C, G, B
+C # C # N/A
+G # N/A # N/A
+F # F :- E # E
+E # E :- C # C
+C # C # N/A
+-------------------------------------------------------------
+H # H :- C,D # C, D
+C # C # N/A
+D # D :- C,G,B # C, G, B
+C # C # N/A
+G # N/A # N/A
+-------------------------------------------------------------
+D # D :- C,G,B # C, G, B
+C # C # N/A
+G # N/A # N/A
+-------------------------------------------------------------
+F # F :- H,C # H, C
+H # H :- C,D # C, D
+C # C # N/A
+D # D :- C,G,B # C, G, B
+C # C # N/A
+G # N/A # N/A
+F # F :- E # E
+E # E :- C # C
+C # C # N/A
+-------------------------------------------------------------

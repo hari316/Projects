@@ -1,0 +1,21 @@
+TURN = 0
+Player = N/A
+Action = N/A
+Destination = N/A
+Union,{E,G,H,J,K,M},46.0
+Confederacy,{A,B,C,D,F,N},53.0
+----------------------------------------------
+TURN = 1
+Player = Union
+Action = Force March
+Destination = I
+Union,{E,G,H,I,J,K,M,N},84.0
+Confederacy,{A,B,C,D,F},27.0
+----------------------------------------------
+TURN = 2
+Player = Confederacy
+Action = Paratroop Drop
+Destination = L
+Union,{E,G,H,I,J,K,M,N},84.0
+Confederacy,{A,B,C,D,F,L},34.0
+----------------------------------------------

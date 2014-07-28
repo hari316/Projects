@@ -1,0 +1,63 @@
+TURN = 0
+Player = N/A
+Action = N/A
+Destination = N/A
+Union,{I,J,K},19.0
+Confederacy,{C,D,F},16.0
+----------------------------------------------
+TURN = 1
+Player = Union
+Action = Paratroop Drop
+Destination = E
+Union,{E,I,J,K},27.0
+Confederacy,{C,D,F},16.0
+----------------------------------------------
+TURN = 2
+Player = Confederacy
+Action = Paratroop Drop
+Destination = N
+Union,{E,I,J,K},27.0
+Confederacy,{C,D,F,N},42.0
+----------------------------------------------
+TURN = 3
+Player = Union
+Action = Force March
+Destination = H
+Union,{E,H,I,J,K,N},64.0
+Confederacy,{C,D,F},16.0
+----------------------------------------------
+TURN = 4
+Player = Confederacy
+Action = Paratroop Drop
+Destination = G
+Union,{E,H,I,J,K,N},64.0
+Confederacy,{C,D,F,G},26.0
+----------------------------------------------
+TURN = 5
+Player = Union
+Action = Force March
+Destination = M
+Union,{E,H,I,J,K,M,N},74.0
+Confederacy,{C,D,F,G},26.0
+----------------------------------------------
+TURN = 6
+Player = Confederacy
+Action = Paratroop Drop
+Destination = L
+Union,{E,H,I,J,K,M,N},74.0
+Confederacy,{C,D,F,G,L},33.0
+----------------------------------------------
+TURN = 7
+Player = Union
+Action = Paratroop Drop
+Destination = A
+Union,{A,E,H,I,J,K,M,N},79.0
+Confederacy,{C,D,F,G,L},33.0
+----------------------------------------------
+TURN = 8
+Player = Confederacy
+Action = Force March
+Destination = B
+Union,{E,H,I,J,K,M,N},74.0
+Confederacy,{A,B,C,D,F,G,L},44.0
+----------------------------------------------
