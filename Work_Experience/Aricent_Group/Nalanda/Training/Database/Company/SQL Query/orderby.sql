@@ -1,0 +1,1 @@
+select * from EMPLOYEE,DEPARTMENT where ssn = Mgr_ssn order by Dno

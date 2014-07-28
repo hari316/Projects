@@ -1,0 +1,8 @@
+D:\Hari@Aricent Group\C#\Web Services\TRT_WebService\TRT_BL\bin\Debug\TRT_BL.dll.config
+D:\Hari@Aricent Group\C#\Web Services\TRT_WebService\TRT_BL\bin\Debug\TRT_BL.dll
+D:\Hari@Aricent Group\C#\Web Services\TRT_WebService\TRT_BL\bin\Debug\TRT_BL.pdb
+D:\Hari@Aricent Group\C#\Web Services\TRT_WebService\TRT_BL\bin\Debug\log4net.dll
+D:\Hari@Aricent Group\C#\Web Services\TRT_WebService\TRT_BL\bin\Debug\utilities.dll
+D:\Hari@Aricent Group\C#\Web Services\TRT_WebService\TRT_BL\obj\Debug\ResolveAssemblyReference.cache
+D:\Hari@Aricent Group\C#\Web Services\TRT_WebService\TRT_BL\obj\Debug\TRT_BL.dll
+D:\Hari@Aricent Group\C#\Web Services\TRT_WebService\TRT_BL\obj\Debug\TRT_BL.pdb

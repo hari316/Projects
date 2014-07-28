@@ -1,0 +1,1 @@
+select fname + ' ' + lname as Full_name from EMPLOYEE

@@ -1,0 +1,6 @@
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\utilities\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\utilities\bin\Release\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\utilities\bin\Release\utilities.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\utilities\bin\Release\log4net.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\utilities\obj\Release\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\utilities\obj\Release\utilities.pdb

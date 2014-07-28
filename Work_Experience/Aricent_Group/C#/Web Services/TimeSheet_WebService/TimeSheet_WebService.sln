@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSheet_SI", "TimeSheet_SI\TimeSheet_SI.csproj", "{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSheet_BL", "TimeSheet_BL\TimeSheet_BL.csproj", "{31579466-AA9A-4CFF-BA26-2709D7C38A5D}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TimesheetAPI", "TimesheetAPI\", "{E06A3C92-7D20-4B70-B978-4EB44BC3BF49}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{31579466-AA9A-4CFF-BA26-2709D7C38A5D}|TimeSheet_BL.dll;{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}|TimeSheet_SI.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TimesheetAPI"
+		Debug.AspNetCompiler.PhysicalPath = "TimesheetAPI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TimesheetAPI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TimesheetAPI"
+		Release.AspNetCompiler.PhysicalPath = "TimesheetAPI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TimesheetAPI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4753"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E06A3C92-7D20-4B70-B978-4EB44BC3BF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06A3C92-7D20-4B70-B978-4EB44BC3BF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06A3C92-7D20-4B70-B978-4EB44BC3BF49}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06A3C92-7D20-4B70-B978-4EB44BC3BF49}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

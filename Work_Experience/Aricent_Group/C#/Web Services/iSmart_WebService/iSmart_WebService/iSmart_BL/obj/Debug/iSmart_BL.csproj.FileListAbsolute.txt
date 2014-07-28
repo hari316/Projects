@@ -1,0 +1,19 @@
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\iSmart_BL\bin\Debug\iSmart_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\iSmart_BL\bin\Debug\iSmart_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\iSmart_BL\bin\Debug\log4net.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\iSmart_BL\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\iSmart_BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\iSmart_BL\obj\Debug\iSmart_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\iSmart_BL\obj\Debug\iSmart_BL.pdb
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\iSmart\iSmart_WebService\iSmart_BL\bin\Debug\iSmart_BL.dll
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\iSmart\iSmart_WebService\iSmart_BL\bin\Debug\iSmart_BL.pdb
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\iSmart\iSmart_WebService\iSmart_BL\bin\Debug\utilities.dll
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\iSmart\iSmart_WebService\iSmart_BL\obj\Debug\ResolveAssemblyReference.cache
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\iSmart\iSmart_WebService\iSmart_BL\obj\Debug\iSmart_BL.dll
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\iSmart\iSmart_WebService\iSmart_BL\obj\Debug\iSmart_BL.pdb
+C:\Users\bgh29309\Desktop\iSmart_WebService\iSmart_WebService\iSmart_BL\bin\Debug\iSmart_BL.dll
+C:\Users\bgh29309\Desktop\iSmart_WebService\iSmart_WebService\iSmart_BL\bin\Debug\iSmart_BL.pdb
+C:\Users\bgh29309\Desktop\iSmart_WebService\iSmart_WebService\iSmart_BL\bin\Debug\utilities.dll
+C:\Users\bgh29309\Desktop\iSmart_WebService\iSmart_WebService\iSmart_BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bgh29309\Desktop\iSmart_WebService\iSmart_WebService\iSmart_BL\obj\Debug\iSmart_BL.dll
+C:\Users\bgh29309\Desktop\iSmart_WebService\iSmart_WebService\iSmart_BL\obj\Debug\iSmart_BL.pdb

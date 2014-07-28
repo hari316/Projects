@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TRT_BL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TRT_BL_TaxiEmpDetails_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.203.114.166/itappsdev/ProjectsWebService/ProjectService.asmx</Value>
+    </Setting>
+    <Setting Name="TRT_BL_TRT_TaxiSharepoint_Lists" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://awstage.intra.aricent.com/sites/applications/TaxiRequest/_vti_bin/Lists.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,78 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace TimeSheet_BL.timesheet
+{
+    public class ts_UpdateInputEntity
+    {
+
+        public ts_UpdateInputEntity()
+        {
+            // TODO: Add constructor logic here 
+        }
+
+        string _TransactionID = string.Empty;
+        string _ChargeCode = string.Empty;
+        int _Billable = 0;
+        string _MComments = string.Empty;
+        string _UpdateFlag = string.Empty;
+        //string _PRFlag = string.Empty;
+
+        public string TransactionID
+        {
+
+            get { return _TransactionID; }
+
+            set { _TransactionID = value; }
+
+        }
+
+        public string ChargeCode
+        {
+
+            get { return _ChargeCode; }
+
+            set { _ChargeCode = value; }
+
+        }
+
+        public int Billable
+        {
+
+            get { return _Billable; }
+
+            set { _Billable = value; }
+
+        }
+
+        public string MComments
+        {
+
+            get { return _MComments; }
+
+            set { _MComments = value; }
+
+        }
+
+        public String UpdateFlag
+        {
+
+            get { return _UpdateFlag; }
+
+            set { _UpdateFlag = value; }
+
+        }
+
+        //public String PRFlag
+        //{
+
+        //    get { return _PRFlag; }
+
+        //    set { _PRFlag = value; }
+
+        //}
+
+    }
+}

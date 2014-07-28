@@ -1,0 +1,1 @@
+select * from EMPLOYEE where dno in (select dnumber from DEPT_LOCATIONS where Dno = Dnumber and Dlocation = 'Bangalore - campus')

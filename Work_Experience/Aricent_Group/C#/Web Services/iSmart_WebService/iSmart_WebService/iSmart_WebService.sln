@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "iSmartAPI", "iSmartAPI\", "{380051F4-4926-4B9B-B80B-162C2F670CBD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{31579466-AA9A-4CFF-BA26-2709D7C38A5D}|iSmart_BL.dll;{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}|iSmart_SI.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/iSmartAPI"
+		Debug.AspNetCompiler.PhysicalPath = "iSmartAPI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\iSmartAPI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/iSmartAPI"
+		Release.AspNetCompiler.PhysicalPath = "iSmartAPI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\iSmartAPI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2814"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iSmart_BL", "iSmart_BL\iSmart_BL.csproj", "{31579466-AA9A-4CFF-BA26-2709D7C38A5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iSmart_SI", "iSmart_SI\iSmart_SI.csproj", "{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{380051F4-4926-4B9B-B80B-162C2F670CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380051F4-4926-4B9B-B80B-162C2F670CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380051F4-4926-4B9B-B80B-162C2F670CBD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{380051F4-4926-4B9B-B80B-162C2F670CBD}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

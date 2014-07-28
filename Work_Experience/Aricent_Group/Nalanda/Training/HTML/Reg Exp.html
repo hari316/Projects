@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<script type="text/javascript">
+function check()
+{
+ var patt1=new RegExp("^[A-Za-z0-9._%+-]+[@][A-Za-z0-9-]+[.][A-Za-z]{2,3}$");
+
+ if(patt1.test(document.getElementById("emid").value))
+ {
+  alert("Valid Email ID");
+ }
+
+ else
+ {
+  alert("Invalid Email ID");
+ }
+
+}
+</script>
+
+</head>
+<body>
+<label>Enter E-mail ID : </label><input type="text" size="20" id="emid" value=""/><br /><br />
+<input type="button" value="Confirm" onclick="check()" />
+</body>
+
+</html>
+

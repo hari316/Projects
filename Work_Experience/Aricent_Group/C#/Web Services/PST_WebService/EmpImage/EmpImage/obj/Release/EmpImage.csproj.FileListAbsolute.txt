@@ -1,0 +1,5 @@
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\EmpImage\EmpImage\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\EmpImage\EmpImage\bin\EmpImage.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\EmpImage\EmpImage\bin\EmpImage.pdb
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\EmpImage\EmpImage\obj\Release\EmpImage.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\EmpImage\EmpImage\obj\Release\EmpImage.pdb

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/SCT_API/global.asax" hash="6629eda7" filehash="40b1ba057c0f" flags="150000" assembly="App_global.asax" type="ASP.global_asax">
+    <filedeps>
+        <filedep name="/SCT_API/global.asax" />
+    </filedeps>
+</preserve>

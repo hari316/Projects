@@ -1,0 +1,20 @@
+2013-01-25 12:42:49,296 [(null)] [9] INFO  ICOMSProvisioningService - ICOMSProvisioningService::Main() called
+2013-01-25 12:42:49,323 [(null)] [9] INFO  ServiceConfigurationManager - Configuration file located at ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2013-01-25 12:42:49,477 [(null)] [9] ERROR ServiceConfigurationManager - LoadServiceConfigFile(): Exception: Could not find a part of the path 'C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_25012013\ICOMS\ICOMSProvisioningService\bin\config\ICOMS_ProdisCRM_Translator_Configuration.xml'.
+2013-01-25 12:42:49,477 [(null)] [9] ERROR ServiceConfigurationManager - LoadServiceConfigFile(): Place copy service configuration file to : ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2013-01-25 12:42:49,477 [(null)] [9] ERROR ServiceConfigurationManager - ServiceConfigurationManager::Error while loading service config file
+2013-02-05 12:34:01,778 [(null)] [9] INFO  ICOMSProvisioningService - ICOMSProvisioningService::Main() called
+2013-02-05 12:34:01,922 [(null)] [9] INFO  ServiceConfigurationManager - Configuration file located at ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2013-02-05 12:34:02,074 [(null)] [9] ERROR ServiceConfigurationManager - LoadServiceConfigFile(): Exception: Could not find a part of the path 'C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_05022013\ICOMS\ICOMSProvisioningService\bin\config\ICOMS_ProdisCRM_Translator_Configuration.xml'.
+2013-02-05 12:34:02,074 [(null)] [9] ERROR ServiceConfigurationManager - LoadServiceConfigFile(): Place copy service configuration file to : ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2013-02-05 12:34:02,074 [(null)] [9] ERROR ServiceConfigurationManager - ServiceConfigurationManager::Error while loading service config file
+2013-02-05 12:34:12,740 [(null)] [10] INFO  ICOMSProvisioningService - ICOMSProvisioningService::Main() called
+2013-02-05 12:34:12,777 [(null)] [10] INFO  ServiceConfigurationManager - Configuration file located at ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2013-02-05 12:34:12,796 [(null)] [10] ERROR ServiceConfigurationManager - LoadServiceConfigFile(): Exception: Could not find a part of the path 'C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_05022013\ICOMS\ICOMSProvisioningService\bin\config\ICOMS_ProdisCRM_Translator_Configuration.xml'.
+2013-02-05 12:34:12,796 [(null)] [10] ERROR ServiceConfigurationManager - LoadServiceConfigFile(): Place copy service configuration file to : ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2013-02-05 12:34:12,796 [(null)] [10] ERROR ServiceConfigurationManager - ServiceConfigurationManager::Error while loading service config file
+2013-02-05 12:34:46,799 [(null)] [8] INFO  ICOMSProvisioningService - ICOMSProvisioningService::Main() called
+2013-02-05 12:34:46,824 [(null)] [8] INFO  ServiceConfigurationManager - Configuration file located at ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2013-02-05 12:34:46,842 [(null)] [8] ERROR ServiceConfigurationManager - LoadServiceConfigFile(): Exception: Could not find a part of the path 'C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_05022013\ICOMS\ICOMSProvisioningService\bin\config\ICOMS_ProdisCRM_Translator_Configuration.xml'.
+2013-02-05 12:34:46,842 [(null)] [8] ERROR ServiceConfigurationManager - LoadServiceConfigFile(): Place copy service configuration file to : ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2013-02-05 12:34:46,842 [(null)] [8] ERROR ServiceConfigurationManager - ServiceConfigurationManager::Error while loading service config file

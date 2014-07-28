@@ -1,0 +1,15 @@
+c:\documents and settings\bgh29309\my documents\visual studio 2010\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\documents and settings\bgh29309\my documents\visual studio 2010\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\documents and settings\bgh29309\my documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\bgh29309\my documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+c:\documents and settings\bgh29309\my documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Spartans\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Spartans\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Spartans\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Spartans\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Spartans\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Documents and Settings\bgh29309\Desktop\Database\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Documents and Settings\bgh29309\Desktop\Database\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Documents and Settings\bgh29309\Desktop\Database\WebApplication1\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\Desktop\Database\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Documents and Settings\bgh29309\Desktop\Database\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

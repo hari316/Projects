@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5319D4D4-E261-419E-A90A-78A5A2FF7F95}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ICOMSProvisioningService</RootNamespace>
+    <AssemblyName>ICOMSProvisioningService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/4cInterface/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit-console-runner, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit-console-runner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit-gui-runner, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit-gui-runner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core.interfaces, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit.core.interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.uiexception, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit.uiexception.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.uikit, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit.uikit.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.util, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit.util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoadBalancerMembers.cs" />
+    <Compile Include="CRM4cInterfaceAvailabilityManager.cs" />
+    <Compile Include="frmICOMSEditConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmICOMSEditConfig.Designer.cs">
+      <DependentUpon>frmICOMSEditConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICOMSProvisioningService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceBusinessRulesManager.cs" />
+    <Compile Include="NUnit\ServiceBusinessRulesManager_UnitTest.cs" />
+    <Compile Include="NUnit\ServiceConfigurationManager_UnitTest.cs" />
+    <Compile Include="NUnit\CRM_Request_UnitTest.cs" />
+    <Compile Include="NUnit\CustCredit_Request_UnitTest.cs" />
+    <Compile Include="NUnit\CustEquip_Request_UnitTest.cs" />
+    <Compile Include="NUnit\CustInfo_Request_UnitTest.cs" />
+    <Compile Include="NUnit\ICOMS_Test_Engine.cs" />
+    <Compile Include="NUnit\ServiceRunTimeManager_UnitTest.cs" />
+    <Compile Include="NUnit\ServiceTranslationManager_UnitTest.cs" />
+    <Compile Include="ServiceConfigurationManager.cs" />
+    <Compile Include="ServiceConstantsManager.cs" />
+    <Compile Include="CustomerCreditRequest.cs" />
+    <Compile Include="CustomerEquipmentRequest.cs" />
+    <Compile Include="ICOMSServiceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceListenerMembers.cs" />
+    <Compile Include="ServiceTokenMembers.cs" />
+    <Compile Include="CustomerInformationRequest.cs" />
+    <Compile Include="CRM4cInterfaceAccessManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceRunTimeManager.cs" />
+    <Compile Include="ServiceTranslationManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BuildScript\ICOMSProvisioningService.build">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="config\ICOMS_ProdisCRM_Translator_Configuration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libs\ICOMSConfigGUI.exe.config" />
+    <None Include="ServiceScript\InstallICOMSProvisioningService.bat" />
+    <None Include="ServiceScript\StartICOMSProvisioningService.bat" />
+    <None Include="ServiceScript\StopICOMSProvisioningService.bat" />
+    <None Include="ServiceScript\UnInstallICOMSProvisioningService.bat" />
+    <None Include="ServiceScript\UnInstallICOMSProvisioningServicePack.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\ICOMS_ProdisCRM_Translator_Configuration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="libs\ICOMSConfigGUI.exe" />
+    <Content Include="libs\log4net.dll" />
+    <Content Include="libs\nunit-console-runner.dll" />
+    <Content Include="libs\nunit-gui-runner.dll" />
+    <Content Include="libs\nunit.core.dll" />
+    <Content Include="libs\nunit.core.interfaces.dll" />
+    <Content Include="libs\nunit.framework.dll" />
+    <Content Include="libs\nunit.uiexception.dll" />
+    <Content Include="libs\nunit.uikit.dll" />
+    <Content Include="libs\nunit.util.dll" />
+    <Content Include="ServiceScript\ICOMSConfigGUI.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmICOMSEditConfig.resx">
+      <DependentUpon>frmICOMSEditConfig.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

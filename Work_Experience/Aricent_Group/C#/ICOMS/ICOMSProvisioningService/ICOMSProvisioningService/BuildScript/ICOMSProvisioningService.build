@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<project name="ICOMSProvisioningService" default="ICOMS" xmlns="http://nant.sf.net/schemas/nant.xsd">
+
+  <!-- Get values dynamically and store in propoerties -->
+ <property name="current.dir" value="${directory::get-current-directory()}" />
+ <property name="current.dir.parent" value="${directory::get-parent-directory(current.dir)}" />
+ <property name="sol.dir" value="${directory::get-parent-directory(current.dir.parent)}" />
+ <property name="output.dir" value="${sol.dir}\ICOMSProvisioningServicePackage\" />
+
+  <!-- Delete existing package directory & create new directory -->
+  <target name="clean">    
+    <delete dir="${output.dir}"  failonerror="false" />    
+    <mkdir dir="${output.dir}"  />    
+  </target>
+
+  <target name="ICOMS" depends="clean">
+    
+    <echo message="DOT NET Framework Directory" />
+    <echo message="${framework::get-framework-directory('net-4.0')}" />
+    <echo message="ICOMS Provisioning Solution directory" />
+    <echo message="${sol.dir}" />
+    
+    <!-- Build .NET project to generate EXE file as per latest code  -->    
+    <exec program="${framework::get-framework-directory('net-4.0')}\MSBuild.exe">
+      <arg value="${sol.dir}\ICOMSProvisioningService.sln" />
+      <arg value="/t:Rebuild" />
+      <arg value="/p:Configuration=Release" />
+      <arg value="/verbosity:quiet" />
+      <arg value="/p:OutDir=${output.dir}" />
+    </exec>
+
+    <!-- Copy batch files in to package folder  -->
+    <copy todir="${output.dir}">
+      <fileset basedir="../ServiceScript">        
+        <include name="*.*"/>        
+      </fileset>
+    </copy>
+    
+    <!-- Copy config folder in to package folder  -->
+    <copy todir="${output.dir}/config">
+      <fileset basedir="../config">
+        <include name="*.*"/>
+      </fileset>
+    </copy>
+  </target>
+  
+</project>

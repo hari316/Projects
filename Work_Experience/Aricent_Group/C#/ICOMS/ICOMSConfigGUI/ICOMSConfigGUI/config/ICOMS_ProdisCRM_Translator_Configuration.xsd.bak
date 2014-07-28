@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 sp1 U (http://www.altova.com) by BGHFSS (Flextronics Software Systems) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="serviceconfiguration" type="ICOMSProdisCRMTranslatorConfig">
+    <xs:annotation>
+      <xs:documentation>Root service configuration element</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ICOMSProdisCRMTranslatorConfig">
+    <xs:annotation>
+      <xs:documentation>Service configuration details</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="sites">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="site" maxOccurs="22">
+              <xs:complexType>
+                <xs:complexContent>
+                  <xs:extension base="ICOMSsiteInfo">
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                    <xs:attribute name="name" type="xs:string" use="required"/>
+                  </xs:extension>
+                </xs:complexContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CRMconnection" type="CRMconnectionInfo"/>
+      <xs:element name="vodpackage" type="VODpackageInfo"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ICOMSsiteInfo">
+    <xs:annotation>
+      <xs:documentation>ICOMS sites info</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="listenerAddress" type="xs:string"/>
+      <xs:element name="listenerPort" type="xs:string"/>
+      <xs:element name="UnitAddressFlag" type="xs:boolean"/>
+      <xs:element name="CustomerIdFlag" type="xs:boolean"/>
+      <xs:element name="DeviceIdFormat" type="xs:string"/>
+      <xs:element name="NativeFormat4cFlag" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CRMconnectionInfo">
+    <xs:annotation>
+      <xs:documentation>Prodis.CRM connection info</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="PrimaryURL" type="xs:string"/>
+      <xs:element name="BackupURL" type="xs:string" minOccurs="0"/>
+      <xs:element name="HTTPtimeout" type="xs:string"/>
+      <xs:element name="RetryNumbers" type="xs:string" default="0"/>
+      <xs:element name="RetryWaitDuration" type="xs:string" default="0"/>
+      <xs:element name="HTTPErrorCodes" type="xs:string" default=""/>
+      <xs:element name="FailoverTime" type="xs:string" default="0" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VODpackageInfo">
+    <xs:annotation>
+      <xs:documentation>Restricted VOD packages</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="TVODRestrictedPackageId" type="xs:string"/>
+      <xs:element name="SVODRestrictedPackageId" type="xs:string"/>
+      <xs:element name="AllVODRestrictedPackageId" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

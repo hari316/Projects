@@ -1,0 +1,1051 @@
+2012-08-03 17:45:16,299 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-03 17:45:16,549 [(null)] [1] ERROR frmICOMSEditConfig - frmICOMSEditConfig_Load(): Err Msg: Could not find a part of the path 'D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\bin\Release\config\ICOMS_ProdisCRM_Translator_Configuration.xml'.
+2012-08-03 17:45:16,611 [(null)] [1] ERROR frmICOMSEditConfig - frmICOMSEditConfig_Load(): Stack Trace:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at ICOMSConfigGUI.frmICOMSEditConfig.frmICOMSEditConfig_Load(Object sender, EventArgs e) in D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\frmICOMSEditConfig.cs:line 101
+2012-08-03 17:45:16,611 [(null)] [1] ERROR frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() throwing error
+2012-08-03 17:45:16,627 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:46:12,877 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-03 17:46:12,908 [(null)] [1] INFO  frmICOMSEditConfig - file:\D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\bin\Release\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-03 17:46:12,940 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-03 17:46:12,955 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:46:12,955 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-03 17:46:12,955 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:46:12,955 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-03 17:46:12,955 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:46:12,955 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:46:13,002 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'111' Text:'siteid1' Tag:'site' 
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'112' Text:'siteid2' Tag:'site' 
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'113' Text:'siteid3' Tag:'site' 
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'114' Text:'siteid4' Tag:'site' 
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'435' Text:'gsdfag' Tag:'site' 
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Id List created  "111,112,113,114,435"
+2012-08-03 17:46:13,018 [(null)] [1] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Name List created "siteid1,siteid2,siteid3,siteid4,gsdfag"
+2012-08-03 17:47:04,205 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-03 17:47:04,236 [(null)] [1] INFO  frmICOMSEditConfig - file:\D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\bin\Release\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-03 17:47:04,236 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-03 17:47:04,236 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:04,236 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-03 17:47:04,236 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:04,236 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-03 17:47:04,236 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:04,236 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'111' Text:'siteid1' Tag:'site' 
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'112' Text:'siteid2' Tag:'site' 
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'113' Text:'siteid3' Tag:'site' 
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'114' Text:'siteid4' Tag:'site' 
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'435' Text:'gsdfag' Tag:'site' 
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Id List created  "111,112,113,114,435"
+2012-08-03 17:47:04,252 [(null)] [1] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Name List created "siteid1,siteid2,siteid3,siteid4,gsdfag"
+2012-08-03 17:47:08,502 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-03 17:47:08,518 [(null)] [1] INFO  frmICOMSEditConfig - file:\D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\bin\Release\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-03 17:47:08,518 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-03 17:47:08,518 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:08,518 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-03 17:47:08,518 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:08,518 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-03 17:47:08,518 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:08,518 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:47:08,533 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'111' Text:'siteid1' Tag:'site' 
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'112' Text:'siteid2' Tag:'site' 
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'113' Text:'siteid3' Tag:'site' 
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'114' Text:'siteid4' Tag:'site' 
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'435' Text:'gsdfag' Tag:'site' 
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Id List created  "111,112,113,114,435"
+2012-08-03 17:47:08,549 [(null)] [1] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Name List created "siteid1,siteid2,siteid3,siteid4,gsdfag"
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="435" name="gsdfag"><listenerAddress>0.0.4.210</listenerAddress><listenerPort>1</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>false</CustomerIdFlag></site>"
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:12,486 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:47:15,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:15,018 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:47:15,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:47:33,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:33,018 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "CRMconnection"
+2012-08-03 17:47:33,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-03 17:47:33,018 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "CRMconnection"
+2012-08-03 17:47:33,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4CRMConn() called
+2012-08-03 17:47:33,018 [(null)] [1] INFO  frmICOMSEditConfig - populateValuesOnControls4CRMConn():: Selected XML Node Information "<CRMconnection><PrimaryURL>http://10.203.233.49:9100/CrmService</PrimaryURL><BackupURL>http://10.203.233.45:9100/CrmService</BackupURL><HTTPtimeout>1000</HTTPtimeout><RetryNumbers>3</RetryNumbers><RetryWaitDuration>2000</RetryWaitDuration><HTTPErrorCodes>500,400</HTTPErrorCodes><FailoverTime>4000</FailoverTime></CRMconnection>"
+2012-08-03 17:47:36,408 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:36,408 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:47:36,408 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="435" name="gsdfag"><listenerAddress>0.0.4.210</listenerAddress><listenerPort>1</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>false</CustomerIdFlag></site>"
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:37,549 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:50,018 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:54,486 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:47:55,346 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-03 17:47:56,580 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:47:56,580 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:47:56,580 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:48:08,768 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-03 17:48:13,502 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-03 17:48:13,533 [(null)] [1] INFO  frmICOMSEditConfig - file:\D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\bin\Release\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-03 17:48:13,533 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-03 17:48:13,533 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:48:13,533 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-03 17:48:13,533 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:48:13,533 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-03 17:48:13,533 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:48:13,533 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'111' Text:'siteid1' Tag:'site' 
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'112' Text:'siteid2' Tag:'site' 
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'113' Text:'siteid3' Tag:'site' 
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'114' Text:'siteid4' Tag:'site' 
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'435' Text:'gsdfag' Tag:'site' 
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Id List created  "111,112,113,114,435"
+2012-08-03 17:48:13,549 [(null)] [1] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Name List created "siteid1,siteid2,siteid3,siteid4,gsdfag"
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-03 17:48:14,893 [(null)] [1] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-03 17:48:16,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:48:16,549 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:48:16,549 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:55:40,018 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-03 17:55:40,049 [(null)] [1] INFO  frmICOMSEditConfig - file:\D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\bin\Release\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-03 17:55:40,049 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-03 17:55:40,049 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:55:40,049 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-03 17:55:40,049 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-03 17:55:40,049 [(null)] [1] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-03 17:55:40,049 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-03 17:55:40,049 [(null)] [1] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-03 17:55:40,065 [(null)] [1] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-03 17:55:40,065 [(null)] [1] ERROR frmICOMSEditConfig - loadICOMSConfiguration(): Err Msg: Object reference not set to an instance of an object.
+2012-08-03 17:55:40,127 [(null)] [1] ERROR frmICOMSEditConfig - loadICOMSConfiguration(): Stack Trace:    at ICOMSConfigGUI.frmICOMSEditConfig.loadICOMSConfiguration(XmlDocument xmlDoc) in D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\frmICOMSEditConfig.cs:line 416
+2012-08-03 17:55:40,127 [(null)] [1] ERROR frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() throwing error
+2012-08-05 15:39:24,673 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-05 15:39:24,751 [(null)] [10] INFO  frmICOMSEditConfig - D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\bin\Release\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-05 15:39:24,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-05 15:39:24,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:24,751 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-05 15:39:24,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:24,751 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-05 15:39:24,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:39:24,751 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:39:24,767 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:39:24,907 [(null)] [10] ERROR frmICOMSEditConfig - loadICOMSConfiguration(): Err Msg: Object reference not set to an instance of an object.
+2012-08-05 15:39:24,938 [(null)] [10] ERROR frmICOMSEditConfig - loadICOMSConfiguration(): Stack Trace:    at ICOMSConfigGUI.frmICOMSEditConfig.loadICOMSConfiguration(XmlDocument xmlDoc) in D:\Projects\ICOMS\ICOMSConfigGUI1\ICOMSConfigGUI\frmICOMSEditConfig.cs:line 416
+2012-08-05 15:39:24,938 [(null)] [10] ERROR frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() throwing error
+2012-08-05 15:39:41,251 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-05 15:39:41,345 [(null)] [10] INFO  frmICOMSEditConfig - ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-05 15:39:41,345 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-05 15:39:41,345 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:41,345 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-05 15:39:41,345 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:41,345 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-05 15:39:41,345 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:39:41,345 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'111' Text:'siteid1' Tag:'site' 
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'112' Text:'siteid2' Tag:'site' 
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'113' Text:'siteid3' Tag:'site' 
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'114' Text:'siteid4' Tag:'site' 
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'435' Text:'gsdfag' Tag:'site' 
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Id List created  "111,112,113,114,435"
+2012-08-05 15:39:41,360 [(null)] [10] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Name List created "siteid1,siteid2,siteid3,siteid4,gsdfag"
+2012-08-05 15:39:43,173 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:39:43,173 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:39:43,173 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:39:43,173 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:39:43,173 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:39:43,173 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:39:43,173 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:39:43,189 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:39:43,189 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:39:43,189 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:39:44,517 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:39:44,517 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:39:44,517 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:42:04,908 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-05 15:42:04,955 [(null)] [9] INFO  frmICOMSEditConfig - ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-05 15:42:04,955 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-05 15:42:04,955 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:42:04,955 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-05 15:42:04,955 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:42:04,955 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-05 15:42:08,268 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:42:09,283 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:42:14,330 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:42:32,799 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:42:32,799 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'111' Text:'siteid1' Tag:'site' 
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'112' Text:'siteid2' Tag:'site' 
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'113' Text:'siteid3' Tag:'site' 
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'114' Text:'siteid4' Tag:'site' 
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'435' Text:'gsdfag' Tag:'site' 
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Id List created  "111,112,113,114,435"
+2012-08-05 15:42:36,877 [(null)] [9] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Name List created "siteid1,siteid2,siteid3,siteid4,gsdfag"
+2012-08-05 15:42:42,237 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:42:43,518 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:42:53,518 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:42:55,784 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:42:58,987 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:42:59,424 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:43:02,737 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:43:02,737 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:43:03,237 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:43:03,237 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:43:27,721 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:43:29,362 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:43:43,471 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:44:25,143 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:44:37,862 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:44:38,519 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:44:40,331 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:45:00,284 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:45:00,737 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:45:09,566 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:45:14,331 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:45:19,363 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:45:19,706 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:45:23,784 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:45:23,784 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:45:24,097 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:45:24,097 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:45:42,050 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:45:42,472 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:45:44,238 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:46:52,926 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-05 15:46:52,957 [(null)] [9] INFO  frmICOMSEditConfig - ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-05 15:46:52,973 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-05 15:46:52,973 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:46:52,973 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-05 15:46:52,973 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:46:52,973 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-05 15:46:52,973 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:52,973 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'111' Text:'siteid1' Tag:'site' 
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'112' Text:'siteid2' Tag:'site' 
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'113' Text:'siteid3' Tag:'site' 
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'114' Text:'siteid4' Tag:'site' 
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'435' Text:'gsdfag' Tag:'site' 
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Id List created  "111,112,113,114,435"
+2012-08-05 15:46:52,988 [(null)] [9] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Name List created "siteid1,siteid2,siteid3,siteid4,gsdfag"
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:54,129 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:46:55,113 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:55,129 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:46:55,863 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:55,863 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:46:55,863 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:56,629 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:57,426 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:57,801 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 15:46:58,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:58,129 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 15:46:58,129 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 15:46:58,410 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 15:46:58,410 [(null)] [9] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 15:46:58,410 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 15:46:58,410 [(null)] [9] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 15:46:58,410 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 15:46:58,410 [(null)] [9] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 15:46:58,426 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:58,426 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 15:46:58,426 [(null)] [9] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 15:46:58,426 [(null)] [9] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:36:43,844 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::frmICOMSEditConfig_Load() called
+2012-08-05 16:36:43,875 [(null)] [10] INFO  frmICOMSEditConfig - ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-05 16:36:43,875 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::loadICOMSConfiguration() called
+2012-08-05 16:36:43,875 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 16:36:43,875 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'sites' Text:'sites' Tag:'sites' 
+2012-08-05 16:36:43,875 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 16:36:43,875 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'CRMconnection' Text:'CRMconnection' Tag:'CRMconnection' 
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'111' Text:'siteid1' Tag:'site' 
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'112' Text:'siteid2' Tag:'site' 
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'113' Text:'siteid3' Tag:'site' 
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'114' Text:'siteid4' Tag:'site' 
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'435' Text:'gsdfag' Tag:'site' 
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Id List created  "111,112,113,114,435"
+2012-08-05 16:36:43,891 [(null)] [10] INFO  frmICOMSEditConfig - loadICOMSConfiguration():: Site Name List created "siteid1,siteid2,siteid3,siteid4,gsdfag"
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:36:46,359 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:36:46,875 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:36:47,516 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:36:47,516 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 16:36:47,516 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:36:48,094 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:36:53,234 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:36:53,234 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:36:53,234 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:36:53,234 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:36:53,250 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:36:53,250 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:36:53,250 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:36:53,250 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:36:53,250 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:36:53,250 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:06,016 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:37:06,016 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:37:06,031 [(null)] [10] WARN  frmICOMSEditConfig - btnUpdateSite_Click::Listner Address and Port combination already exist in other site
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:39,563 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:41,891 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:42,485 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:43,188 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:43,657 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:44,344 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:44,922 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:45,813 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:46,813 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:49,313 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:50,391 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:51,547 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:53,000 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:54,813 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:37:56,079 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:38:00,047 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:02,922 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:11,594 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:13,360 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:14,157 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:15,532 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:16,376 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:38:27,751 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:38:28,469 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:38:28,672 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:38:28,876 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:30,188 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:38:31,266 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="435" name="gsdfag"><listenerAddress>0.0.4.210</listenerAddress><listenerPort>1</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>false</CustomerIdFlag></site>"
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:37,094 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:42,485 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:43,719 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:38:44,860 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:38:51,266 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:38:51,266 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:38:51,266 [(null)] [10] WARN  frmICOMSEditConfig - btnUpdateSite_Click::Listner Address and Port combination already exist in other site
+2012-08-05 16:39:02,110 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:39:02,110 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:39:02,110 [(null)] [10] WARN  frmICOMSEditConfig - btnUpdateSite_Click::Listner Address and Port combination already exist in other site
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:08,829 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:10,157 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:11,032 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:11,845 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:12,798 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:13,626 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:14,360 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:16,813 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:39:18,313 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:40:19,954 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:40:26,376 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:40:27,251 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:42:59,034 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:42:59,034 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:42:59,034 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:42:59,034 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:42:59,034 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:42:59,034 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:42:59,034 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:42:59,034 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:43:01,627 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:43:02,830 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="113" name="siteid3"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:43:04,955 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:43:05,971 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:43:12,127 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:43:12,456 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:43:19,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:43:19,971 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:43:19,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:43:19,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:43:19,971 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:43:19,971 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:43:19,971 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:43:19,971 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>14000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:43:27,862 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>15000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:43:39,846 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:43:39,846 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:43:39,846 [(null)] [10] WARN  frmICOMSEditConfig - btnUpdateSite_Click::Listner Address and Port combination already exist in other site
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnUpdateSite_Click() called
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnNodes4Site() called
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "true"
+2012-08-05 16:43:45,331 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Updated XML Node Information "<site id="114" name="siteid4"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>15000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:43:50,284 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:43:50,284 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 16:43:50,284 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 16:44:04,534 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnAddSite_Click() called
+2012-08-05 16:44:04,534 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:44:04,534 [(null)] [10] WARN  frmICOMSEditConfig - btnUpdateSite_Click::Listner Address and Port combination already exist in other site
+2012-08-05 16:44:11,128 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnAddSite_Click() called
+2012-08-05 16:44:11,128 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:44:11,128 [(null)] [10] WARN  frmICOMSEditConfig - btnUpdateSite_Click::Listner Address and Port combination already exist in other site
+2012-08-05 16:44:16,659 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnAddSite_Click() called
+2012-08-05 16:44:16,659 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:44:16,659 [(null)] [10] WARN  frmICOMSEditConfig - btnUpdateSite_Click::Listner Address and Port combination already exist in other site
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnAddSite_Click() called
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::checkValidation4Site() called
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForNodeFromComboBox() called
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - getValueForNodeFromComboBox():: return value is "false"
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::createNewSiteXMLNode() called
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - createNewSiteXMLNode():: New XML Node created for Site "<CustomerIdFlag>false</CustomerIdFlag>"
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getTreeNode() called
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - getTreeNode():: Tree Node Created. Name :'555' Text:'sfsdf' Tag:'site' 
+2012-08-05 16:44:22,956 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="555" name="sfsdf"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>16000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>false</CustomerIdFlag></site>"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - btnAddSite_Click():: New Site Id added into site id list "555"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - btnAddSite_Click():: values of Site Id List "112,435,111,113,114,555"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - btnAddSite_Click():: New Site Name added into site Name list "sfsdf"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - btnAddSite_Click():: Values of Site Name List "siteid2,gsdfag,siteid1,siteid3,siteid4,sfsdf"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - btnAddSite_Click():: New Listner Address & Port combination added into list "sfsdf"
+2012-08-05 16:44:22,972 [(null)] [10] INFO  frmICOMSEditConfig - btnAddSite_Click():: Values of Listner Address & Port combination list "siteid2,gsdfag,siteid1,siteid3,siteid4,sfsdf"
+2012-08-05 16:44:25,081 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::btnSiteConfigSave_Click() called
+2012-08-05 16:44:25,081 [(null)] [10] INFO  frmICOMSEditConfig - ../../\config\ICOMS_ProdisCRM_Translator_Configuration.xml
+2012-08-05 16:44:28,175 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:44:28,175 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "sites"
+2012-08-05 16:44:28,175 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::clearAllFieldsOfSite() called
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="111" name="siteid1"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>12000</listenerPort><!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address --><UnitAddressFlag>false</UnitAddressFlag><!-- If CustomerIdFlag is true then parse customer id with site id else do not --><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:44:29,550 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "site"
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "site"
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4Site() called
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4Site():: Selected XML Node Information "<site id="112" name="siteid2"><listenerAddress>10.203.242.198</listenerAddress><listenerPort>13000</listenerPort><UnitAddressFlag>false</UnitAddressFlag><CustomerIdFlag>true</CustomerIdFlag></site>"
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "0"
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::getValueForComboBox() called
+2012-08-05 16:44:29,831 [(null)] [10] INFO  frmICOMSEditConfig - getValueForComboBox():: return value is "1"
+2012-08-05 16:44:30,581 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::tvICOMSEditConfig_AfterSelect() called
+2012-08-05 16:44:30,581 [(null)] [10] INFO  frmICOMSEditConfig - tvICOMSEditConfig_AfterSelect():: Selected Node Name "CRMconnection"
+2012-08-05 16:44:30,597 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::manageNode2CntrlAndCntrl2Node() called
+2012-08-05 16:44:30,597 [(null)] [10] INFO  frmICOMSEditConfig - manageNode2CntrlAndCntrl2Node():: Selected Node Name "CRMconnection"
+2012-08-05 16:44:30,597 [(null)] [10] INFO  frmICOMSEditConfig - ICOMSEditConfiguration::populateValuesOnControls4CRMConn() called
+2012-08-05 16:44:30,597 [(null)] [10] INFO  frmICOMSEditConfig - populateValuesOnControls4CRMConn():: Selected XML Node Information "<CRMconnection><PrimaryURL>http://10.203.233.49:9100/CrmService</PrimaryURL><BackupURL>http://10.203.233.45:9100/CrmService</BackupURL><HTTPtimeout>1000</HTTPtimeout><RetryNumbers>3</RetryNumbers><RetryWaitDuration>2000</RetryWaitDuration><HTTPErrorCodes>500,400</HTTPErrorCodes><FailoverTime>4000</FailoverTime></CRMconnection>"

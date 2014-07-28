@@ -1,0 +1,16 @@
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\utilities\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\utilities\bin\Debug\utilities.pdb
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\utilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\utilities\obj\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\utilities\obj\Debug\utilities.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\utilities\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\utilities\bin\Debug\utilities.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\utilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\utilities\obj\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\utilities\obj\Debug\utilities.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\utilities\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\utilities\bin\Debug\utilities.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\utilities\bin\Debug\log4net.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\utilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\utilities\obj\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\iSmartAPI\CODE\iSmart_WebService\utilities\obj\Debug\utilities.pdb

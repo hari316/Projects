@@ -1,0 +1,37 @@
+SELECT TTD_PROJECT as ChargeCode,p1.pm_desc as ProjectName,b1.trad_rm_per as Billable,TTD_ACTIVITY,t2.ta_desc as ActivityName,MON,TUE,WED,THU,FRI,SAT,SUN,MON+TUE+WED+THU+FRI+SAT+SUN Total_hrs
+
+FROM 
+(
+    SELECT TTD_PROJECT,TTD_ACTIVITY,
+           max(decode(DAY,'Monday   ',ttd_hours,0))Mon,
+           max(decode(DAY,'Tuesday  ',ttd_hours,0))Tue,
+           max(decode(DAY,'Wednesday',ttd_hours,0))Wed,
+           max(decode(DAY,'Thursday ',ttd_hours,0))Thu,
+           max(decode(DAY,'Friday   ',ttd_hours,0))Fri,
+           max(decode(DAY,'Saturday ',ttd_hours,0))Sat,
+           max(decode(DAY,'Sunday   ',ttd_hours,0))Sun       
+    FROM
+    (
+       SELECT ttd_ttmid, TO_CHAR(ttd_date, 'Day') Day ,ttd_hours ,TTD_PROJECT,TTD_ACTIVITY 
+       FROM
+              T_TS_DET_SUB WHERE ttd_ttmid = '825222082011'     
+    )     
+    GROUP BY(TTD_PROJECT,TTD_ACTIVITY,ttd_ttmid)
+    
+) t1,project_master p1,t_activity t2,
+(select  prjId,trad_rm_per,rm.trad_empno
+from
+(
+select t.ttd_ttmid as Transactn,TTM_EMPNO,min(t.ttd_date) as mindate, t.ttd_project as prjId from T_TS_DET_SUB t, T_TS_MAS_SUB u 
+where u.ttm_id = t.ttd_ttmid and t.ttd_ttmid = '825222082011'  group by t.ttd_ttmid,TTM_EMPNO, t.ttd_project
+)tl,rm_alloc rm
+where  tl.mindate >= rm.trad_alloc_from and tl.mindate <= rm.trad_alloc_to and TTM_EMPNO = rm.trad_empno and tl.prjId = rm.trad_charge_code order by 1
+) b1 
+
+where t1.ttd_project=p1.pm_id
+and t1.ttd_activity=t2.ta_id 
+and t1.TTD_PROJECT = b1.prjId
+
+ ;
+
+http://iplanqa.asian.ad.aricent.com/TimeSheet_WebService/Service.asmx?WSDL

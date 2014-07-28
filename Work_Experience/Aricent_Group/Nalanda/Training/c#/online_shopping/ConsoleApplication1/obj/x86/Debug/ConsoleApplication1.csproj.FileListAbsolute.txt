@@ -1,0 +1,12 @@
+C:\Documents and Settings\bgh29335\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\bgh29335\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\bgh29335\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29335\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\bgh29335\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\bgh29335\Desktop\Training\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\bgh29335\Desktop\Training\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\bgh29309\Desktop\Shavak-Training\Shavak-Training\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\bgh29309\Desktop\Shavak-Training\Shavak-Training\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\bgh29309\Desktop\Shavak-Training\Shavak-Training\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\bgh29309\Desktop\Shavak-Training\Shavak-Training\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\bgh29309\Desktop\Shavak-Training\Shavak-Training\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache

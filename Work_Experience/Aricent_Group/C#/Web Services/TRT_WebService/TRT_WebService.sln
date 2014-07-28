@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TRT_API", "TRT_API\", "{DF83D9B0-0F30-4AB8-AB98-29EECF6A4222}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{31579466-AA9A-4CFF-BA26-2709D7C38A5D}|PST_BL.dll;{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}|PST_SI.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TRT_API"
+		Debug.AspNetCompiler.PhysicalPath = "TRT_API\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TRT_API\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TRT_API"
+		Release.AspNetCompiler.PhysicalPath = "TRT_API\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TRT_API\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50062"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRT_SI", "TRT_SI\TRT_SI.csproj", "{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRT_BL", "TRT_BL\TRT_BL.csproj", "{31579466-AA9A-4CFF-BA26-2709D7C38A5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF83D9B0-0F30-4AB8-AB98-29EECF6A4222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF83D9B0-0F30-4AB8-AB98-29EECF6A4222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF83D9B0-0F30-4AB8-AB98-29EECF6A4222}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF83D9B0-0F30-4AB8-AB98-29EECF6A4222}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FBB93E-41B8-4D7C-AF96-A21B6EA57C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31579466-AA9A-4CFF-BA26-2709D7C38A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

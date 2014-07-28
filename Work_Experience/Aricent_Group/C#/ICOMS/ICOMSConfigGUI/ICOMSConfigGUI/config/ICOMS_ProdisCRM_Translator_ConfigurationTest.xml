@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<serviceconfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ICOMS_ProdisCRM_Translator_Configuration.xsd">
+  <!-- Mutiple Sites. Each site for a ICOMS server. Max 22 sites supported -->
+  <!-- 
+      DD/MM/YYYY        -     Comments
+      15/06/2012        -  Added BAckup CRM Info
+  -->
+  <sites>
+    <site id="111" name="siteid1">
+      <listenerAddress>10.203.242.198</listenerAddress>
+      <listenerPort>12000</listenerPort>
+      <!-- If UnitAddressFlag is true then parse hardware address as unit address else it is MAC address -->
+      <UnitAddressFlag>false</UnitAddressFlag>
+      <!-- If CustomerIdFlag is true then parse customer id with site id else do not -->
+      <CustomerIdFlag>true</CustomerIdFlag>
+    </site>
+    <site id="112" name="siteid2">
+      <listenerAddress>10.203.242.198</listenerAddress>
+      <listenerPort>13000</listenerPort>
+      <UnitAddressFlag>false</UnitAddressFlag>
+      <CustomerIdFlag>true</CustomerIdFlag>
+    </site>
+    <site id="113" name="siteid3">
+      <listenerAddress>10.203.242.198</listenerAddress>
+      <listenerPort>14000</listenerPort>
+      <UnitAddressFlag>false</UnitAddressFlag>
+      <CustomerIdFlag>true</CustomerIdFlag>
+    </site>
+    <site id="114" name="siteid4">
+      <listenerAddress>10.203.242.198</listenerAddress>
+      <listenerPort>14000</listenerPort>
+      <UnitAddressFlag>false</UnitAddressFlag>
+      <CustomerIdFlag>true</CustomerIdFlag>
+    </site>
+  </sites>
+  <!-- Connection info for 4c interface (REST interface) including backup interface info -->
+  <CRMconnection>
+    <PrimaryURL>http://10.203.233.49:9100/CrmService</PrimaryURL>
+    <BackupURL>http://10.203.233.45:9100/CrmService</BackupURL>
+    <HTTPtimeout>1000</HTTPtimeout>
+    <RetryNumbers>3</RetryNumbers>
+    <RetryWaitDuration>2000</RetryWaitDuration>
+    <HTTPErrorCodes>500,400</HTTPErrorCodes>
+    <FailoverTime>4000</FailoverTime>
+  </CRMconnection>
+  <vodpackage>
+    <TVODRestrictedPackageId>TVODRestrictedPackageId</TVODRestrictedPackageId>
+    <SVODRestrictedPackageId>SVODRestrictedPackageId</SVODRestrictedPackageId>
+    <AllVODRestrictedPackageId>AllVODRestrictedPackageId</AllVODRestrictedPackageId>
+  </vodpackage>
+</serviceconfiguration>

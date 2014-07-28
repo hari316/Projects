@@ -1,0 +1,83 @@
+SELECT TTD_PROJECT,TTD_ACTIVITY,MON,TUE,WED,THU,FRI,SAT,SUN,MON+TUE+WED+THU+FRI+SAT+SUN Total_hrs 
+FROM 
+(
+    SELECT TTD_PROJECT,TTD_ACTIVITY,
+           max(decode(DAY,'Monday   ',ttd_hours,0))Mon,
+           max(decode(DAY,'Tuesday  ',ttd_hours,0))Tue,
+           max(decode(DAY,'Wednesday',ttd_hours,0))Wed,
+           max(decode(DAY,'Thursday ',ttd_hours,0))Thu,
+           max(decode(DAY,'Friday   ',ttd_hours,0))Fri,
+           max(decode(DAY,'Saturday ',ttd_hours,0))Sat,
+           max(decode(DAY,'Sunday   ',ttd_hours,0))Sun       
+    FROM
+    (
+       SELECT ttd_ttmid, TO_CHAR(ttd_date, 'Day') Day ,ttd_hours ,TTD_PROJECT,TTD_ACTIVITY 
+       FROM
+              T_TS_DET_SUB WHERE ttd_ttmid = '2013429082011'
+       GROUP BY(ttd_ttmid, ttd_date ,ttd_hours ,TTD_PROJECT,TTD_ACTIVITY) 
+    )     
+    GROUP BY(TTD_PROJECT,TTD_ACTIVITY)
+    ORDER BY(TTD_ACTIVITY) 
+);
+
+
+
+working
+
+SELECT TTD_PROJECT,TTD_ACTIVITY,MON,TUE,WED,THU,FRI,SAT,SUN,MON+TUE+WED+THU+FRI+SAT+SUN Total_hrs,
+p1.pm_desc,
+t2.ta_desc,b1.tmbp_billper
+
+FROM 
+(
+    SELECT TTD_PROJECT,TTD_ACTIVITY,
+           max(decode(DAY,'Monday   ',ttd_hours,0))Mon,
+           max(decode(DAY,'Tuesday  ',ttd_hours,0))Tue,
+           max(decode(DAY,'Wednesday',ttd_hours,0))Wed,
+           max(decode(DAY,'Thursday ',ttd_hours,0))Thu,
+           max(decode(DAY,'Friday   ',ttd_hours,0))Fri,
+           max(decode(DAY,'Saturday ',ttd_hours,0))Sat,
+           max(decode(DAY,'Sunday   ',ttd_hours,0))Sun       
+    FROM
+    (
+       SELECT ttd_ttmid, TO_CHAR(ttd_date, 'Day') Day ,ttd_hours ,TTD_PROJECT,TTD_ACTIVITY 
+       FROM
+              T_TS_DET_SUB WHERE ttd_ttmid = '1506722102007'     
+    )     
+    GROUP BY(TTD_PROJECT,TTD_ACTIVITY,ttd_ttmid)
+    
+) t1,project_master p1,t_activity t2,ts_mas_bill_per b1,
+
+where  t1.ttd_project=p1.pm_id
+and t1.ttd_activity=t2.ta_id
+and b1.tmbp_ttmid='1506722102007'
+ ;
+
+
+today
+
+select  prjId,trad_rm_per,rm.trad_empno
+from
+(
+select t.ttd_ttmid as Transactn,TTM_EMPNO,min(t.ttd_date) as mindate, t.ttd_project as prjId from T_TS_DET_SUB t, T_TS_MAS_SUB u 
+where u.ttm_id = t.ttd_ttmid and t.ttd_ttmid = '825222082011'  group by t.ttd_ttmid,TTM_EMPNO, t.ttd_project
+)tl,rm_alloc rm
+where  tl.mindate >= rm.trad_alloc_from and tl.mindate <= rm.trad_alloc_to and TTM_EMPNO = rm.trad_empno and tl.prjId = rm.trad_charge_code order by 1
+
+
+
+
+
+
+
+select t.ttd_ttmid as Transactn,min(t.ttd_date) as mindate, t.ttd_project as prjName from T_TS_DET_SUB t, T_TS_MAS_SUB u 
+where u.ttm_id = t.ttd_ttmid group by t.ttd_ttmid, t.ttd_project
+
+
+select t.ttd_ttmid as Transactn,min(t.ttd_date) as mindate, t.ttd_project as prjName from T_TS_DET_SUB t, T_TS_MAS_SUB u 
+where u.ttm_id = t.ttd_ttmid and t.ttd_ttmid='825222082011' group by t.ttd_ttmid, t.ttd_project order by 3,1,2 
+
+select t.ttd_ttmid as Transactn,t.ttd_date, t.ttd_project as prjName from T_TS_DET_SUB t, T_TS_MAS_SUB u 
+where u.ttm_id = t.ttd_ttmid and t.ttd_ttmid='825222082011' order by 3,1,2 
+
+Select count(distinct ttd_project), ttd_ttmid from T_TS_DET_SUB group by ttd_ttmid order by 1 desc

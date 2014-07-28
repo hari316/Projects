@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Dynamic Page</title>
+	<script type = "text/javascript">
+		function add_data()
+		{
+			var strName,strCity;
+			strName = document.forms["myform"]["name"].value;
+			strCity = document.forms["myform"]["city"].value;
+			//alert(strName+" "+strCity);
+			document.forms["myform"]["name"].value="";
+			document.forms["myform"]["city"].value="";
+			var tableName=document.getElementById('myTable');
+
+			var rowCount=tableName.rows.length;
+			var row= tableName.insertRow(rowCount);
+            
+            var cell_1=row.insertCell(0);
+            cell_1.innerHTML=rowCount;
+             
+		    var cell_2=row.insertCell(1);
+            cell_2.innerHTML=strName;
+           
+			var cell_3=row.insertCell(2);
+            cell_3.innerHTML=strCity;
+
+            var cell_4=row.insertCell(3);
+            var element1 = document.createElement("input");
+            element1.type = "button";
+			element1.value="Delete";
+			element1.onclick = "delete_data()"; 
+            cell_4.appendChild(element1);
+           
+			
+		}
+
+		function delete_data()
+		{      
+		      alert("WORK!!!");
+              var tableName=document.getElementById('myTable');
+			  var rowCount=tableName.rows.length;
+             
+
+			 for(var rowNum;rowNum<rowCount;rowNum++)
+			  {  var rows=tableName.rows[rowNum];
+			     var elem=row.cells[3].childNodes[0];
+			     if(elem.onclick)
+				 {
+				 tableName.deleteRow(rowNum);
+		         rowNum--;
+				 rowCount--;
+				 }
+			  }
+		}
+	</script>
+	
+</head>
+
+<body>
+<center>
+<br><br>
+<h2><b>Client Details</b></h2>
+<form name = "myform">
+<table border = 0>
+<tr><td>NAME:</td><td><input type="text" name="name" value="" /></td></tr> <tr><td>CITY:</td><td><input type="text" name="city" value="" /></td></tr> <tr></tr> <tr><td colspan = "3"><center><input type="button" value="Enter" onclick ="add_data()" /></center></td></tr>
+
+</table></form>
+
+<table id ="myTable" border ="1">
+	<tr>
+		<th>Serial Number</th>
+		<th>Name</th>
+		<th>City</th>
+
+
+	</tr>
+</table>
+</body>
+</html>

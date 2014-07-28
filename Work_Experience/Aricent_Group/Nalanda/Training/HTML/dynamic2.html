@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>Dynamic Page</title>
+	<script type = "text/javascript">
+	
+		var rowCount = 0;
+		function add_data()
+		{
+			var strName,strCity;
+			strName = document.forms["myform"]["name"].value;
+			strCity = document.forms["myform"]["city"].value;
+			alert(strName+" "+strCity);
+			var table = document.getElementById('myTable');
+			var cap = table.createCaption();
+			cap.innerHTML = "<b><h3>Client Database</h3></b><br>";
+			rowCount = table.rows.length;
+			alert(rowCount);
+			var row = table.insertRow(rowCount);
+			var cell1 = row.insertCell(0);
+			cell1.innerHTML=rowCount;
+			
+			var cell2 = row.insertCell(1);
+            var element2 = document.createElement("input");
+            element2.type = "text";
+            cell2.appendChild(element2);
+			cell2.innerHTML=strName;
+			
+			var cell3 = row.insertCell(2);
+            var element3 = document.createElement("input");
+            element3.type = "text";
+            cell3.appendChild(element3);
+			cell3.innerHTML=strCity;
+			
+			var cell4 = row.insertCell(3);
+            var element4 = document.createElement("input");
+            element4.type = "button";
+            element4.value="Delete";
+			cell4.appendChild(element4);
+			element4.onclick = "delete_data(this.parentNode.parentNode.rowIndex)";
+			
+		}
+		function delete_data(i)
+		{
+			alert("Data of client Deleted");
+			document.getElementById('myTable').deleteRow(i);
+		}
+	</script>
+	
+</head>
+
+<body>
+<center>
+<br><br>
+<h2><b>Client Details</b></h2>
+<form name = "myform">
+<table border = 0>
+<tr><td>NAME:</td><td><input type="text" name="name" value="" /></td></tr>
+<tr><td>CITY:</td><td><input type="text" name="city" value="" /></td></tr>
+<tr></tr>
+<tr><td colspan = "3"><center><input type="button" value="Submit" onclick ="add_data()" /></center></td></tr></form>
+</table>
+<br/><br/>
+<table id ="myTable" width ="250px" border ="1">
+	<tr>
+		<th width = "10%">INDEX</th>
+		<th width ="40%">NAME</th>
+		<th width ="40%">CITY</th>
+		<th width ="10%">OPTIONS</th>
+		
+	</tr>
+</table>
+</center>
+<body>

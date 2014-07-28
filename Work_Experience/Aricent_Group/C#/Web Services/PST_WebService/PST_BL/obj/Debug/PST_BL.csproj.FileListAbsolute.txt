@@ -1,0 +1,7 @@
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\PST_WebService\PST_BL\bin\Debug\PST_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\PST_WebService\PST_BL\bin\Debug\PST_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\PST_WebService\PST_BL\bin\Debug\log4net.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\PST_WebService\PST_BL\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\PST_WebService\PST_BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\PST_WebService\PST_BL\obj\Debug\PST_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\PST_WebService\PST_BL\obj\Debug\PST_BL.pdb

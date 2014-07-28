@@ -1,0 +1,49 @@
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\log4net.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.pdb
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\LogDB.dll
+C:\Documents and Settings\bgh29309\My Documents\Visual Studio 2010\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\LogDB.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\LogDB.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\LogDB.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\CODE\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\TimesheetAPI\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\TimesheetAPI\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\TimesheetAPI\CODE\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\TimesheetAPI\CODE\TimeSheet_WebService\TimeSheet_BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\TimesheetAPI\CODE\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\TimesheetAPI\CODE\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.pdb
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\Timesheet\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.dll
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\Timesheet\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.pdb
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\Timesheet\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.dll
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\Timesheet\TimeSheet_WebService\TimeSheet_BL\obj\Debug\ResolveAssemblyReference.cache
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\Timesheet\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.dll
+D:\Intranet\ITAppsDev\Mobile Applications\CodeBase\Timesheet\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.pdb
+D:\BackUp -XP\C Drive\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.dll
+D:\BackUp -XP\C Drive\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.pdb
+D:\BackUp -XP\C Drive\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.dll
+D:\BackUp -XP\C Drive\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\obj\Debug\ResolveAssemblyReference.cache
+D:\BackUp -XP\C Drive\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.dll
+D:\BackUp -XP\C Drive\Documents and Settings\bgh29309\My Documents\Web Service Project\DevServer\Final Version\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.pdb
+D:\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.dll
+D:\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\TimeSheet_BL.pdb
+D:\Projects\TimeSheet_WebService\TimeSheet_BL\bin\Debug\utilities.dll
+D:\Projects\TimeSheet_WebService\TimeSheet_BL\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.dll
+D:\Projects\TimeSheet_WebService\TimeSheet_BL\obj\Debug\TimeSheet_BL.pdb

@@ -1,0 +1,36 @@
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\bin\Release\ICOMSClient.exe
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\bin\Release\ICOMSClient.pdb
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ICOMSClient.FrmICOMSClient.resources
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ICOMSClient.Properties.Resources.resources
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ICOMSClient.exe
+C:\Documents and Settings\bgh10606\Desktop\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ICOMSClient.pdb
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\bin\Release\ICOMSClient.exe
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\bin\Release\ICOMSClient.pdb
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ICOMSClient.FrmICOMSClient.resources
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ICOMSClient.Properties.Resources.resources
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\GenerateResource.read.1.tlog
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\GenerateResource.write.1.tlog
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ICOMSClient.exe
+E:\Projects\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Release\ICOMSClient.pdb
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ICOMSClient.FrmICOMSClient.resources
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ICOMSClient.Properties.Resources.resources
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\GenerateResource.read.1.tlog
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\GenerateResource.write.1.tlog
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\bin\Release\ICOMSClient.exe
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\bin\Release\ICOMSClient.pdb
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ICOMSClient.exe
+E:\Projects\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ICOMSClient.pdb
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ICOMSClient.exe
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ICOMSClient.pdb
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\bin\Release\ICOMSClient.exe
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\bin\Release\ICOMSClient.pdb
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ICOMSClient.FrmICOMSClient.resources
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\ICOMSClient.Properties.Resources.resources
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\bgh29309\Desktop 4\ICOMS\ICOMSProvisiningService_Client 1.0\ICOMSProvisiningService_Client 1.0\ICOMSClient\obj\x86\Release\GenerateResource.write.1.tlog

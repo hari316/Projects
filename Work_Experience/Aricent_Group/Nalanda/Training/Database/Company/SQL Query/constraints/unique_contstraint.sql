@@ -1,0 +1,1 @@
+alter table DEPARTMENT add constraint Unique_Dname unique(Dname)

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Listings </TITLE>
+ 
+
+<script type = "text/javascript">
+    
+    var namarr=new Array();
+	var pobarr=new Array();
+	var count=0;
+	namarr.splice(0,50);
+	pobarr.splice(0,50);
+	
+	function add()
+	{
+      namarr[count]=document.forms["formarray"]["name"].value;
+      pobarr[count]=document.forms["formarray"]["pob"].value;
+     // alert(namarr[count] + "\n" + pobarr[count]);
+	  count++;
+	  document.forms["formarray"]["name"].value=" ";
+	  document.forms["formarray"]["pob"].value=" ";
+	}
+
+
+	function disp()
+	{
+             var tableName=document.getElementById("tblarray");
+		    //var tableName=document.forms["formarray"][tid];
+			//var rCount=tableName.rows.length;
+            var row;
+	
+			row=tableName.insertRow(2);
+            
+		    var cell_1=row.insertCell(0);
+            cell_1.innerHTML="<b><font size='5'>" + "Name" + "</font></b>";
+	 
+	        var cell_2=row.insertCell(1);
+            cell_2.innerHTML="<b><font size='5'>" + "Place of Birth" + "</font></b>";  
+            
+	 for(var i=0;i<count;i++)
+	 {   
+	    //alert(namarr[i] + "\n" + pobarr[i]);
+         row=tableName.insertRow(4+i);
+		
+		 var cell_1=row.insertCell(0);
+            cell_1.innerHTML=namarr[i];
+	 
+	     var cell_2=row.insertCell(1);
+            cell_2.innerHTML=pobarr[i]; 
+	 
+     }
+
+	}
+
+
+</script>
+
+</HEAD>
+
+<BODY>
+
+
+<h2>Enter Details</h2>
+
+<form name="formarray">
+<table id="tblarray" name="tblarray" border=0>
+
+<tr><td>Name</td><td><input type="text" name="name" value=" " /></td></tr>
+<tr><td>Place of birth</td><td><input type="text" name="pob" value=" " /></td></tr>
+<tr id="bu"><td><input type="button" value="Add" onclick="add()" /></td><td><input type="button" value="List All" onclick="disp()" /></td></tr>
+
+</table>
+</form>
+</BODY>
+</HTML>

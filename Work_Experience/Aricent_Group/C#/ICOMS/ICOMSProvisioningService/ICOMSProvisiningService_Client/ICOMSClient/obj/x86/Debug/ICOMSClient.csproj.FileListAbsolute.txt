@@ -1,0 +1,9 @@
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\bin\Debug\ICOMSClient.exe
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\bin\Debug\ICOMSClient.pdb
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Debug\ICOMSClient.FrmICOMSClient.resources
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Debug\ICOMSClient.Properties.Resources.resources
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Debug\ICOMSClient.exe
+C:\Users\bgh29309\Desktop 4\ICOMSProvisioningService_18012013\ICOMS\ICOMSProvisiningService_Client\ICOMSClient\obj\x86\Debug\ICOMSClient.pdb

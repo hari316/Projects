@@ -1,0 +1,502 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+using System.Globalization;
+using utilities;
+using System.Data;
+
+
+namespace iSmart_BL.iSmart
+{
+    public class iSmart_DAL
+    {
+        public iSmart_DAL()
+        {
+            // TODO: Add constructor logic here 
+        }
+
+        private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(typeof(iSmart_DAL));    
+
+        queryLog QueryLog = new queryLog();
+
+        /// <summary>
+        /// This function fetches the iSmart Details from the database based on PReqNo
+        /// </summary>
+        /// <param name="PReqNo"></param>
+        /// <returns>
+        /// <paramref name="iSmartEntity"/>
+        /// </returns>
+        /// <history>
+        ///     Hari haran      07/05/2012      created
+        /// </history>
+
+        public iSmartEntity getPurchaseRequestDetails_DAL(string PReqNo)
+        {
+            logger.Info("Method : getPurchaseRequestDetails_DAL Start");
+            logger.Debug("PReqNo value : " + PReqNo);       
+
+            databaseLayer dbConStr = new databaseLayer();
+            string connStr = dbConStr.connectionInfo;
+
+            logger.Debug("Connection string : " + connStr);
+
+            SqlConnection conn = new SqlConnection(connStr);
+           // SqlTransaction tsTrans = null;
+            if (conn.State == System.Data.ConnectionState.Closed)
+            {
+                conn.Open();
+                logger.Debug("Connection Status opened ");
+            }
+
+            logger.Info("Connetion to the database established");
+
+            try
+            {
+                //tsTrans = conn.BeginTransaction();
+                string Query = "ITRMSMobileGetData";
+                SqlCommand cmd_iSmartDetails = new SqlCommand();
+                cmd_iSmartDetails.Connection = conn;
+                cmd_iSmartDetails.CommandText = Query;
+                cmd_iSmartDetails.CommandType = CommandType.StoredProcedure;
+                cmd_iSmartDetails.Parameters.AddWithValue("@PReqNo", PReqNo);
+               // cmd_iSmartDetails.Transaction = tsTrans;
+
+                logger.Info("cmd_iSmartDetails Query parameters initialised");
+
+                QueryLog.CmdInfo(cmd_iSmartDetails);
+
+                SqlDataAdapter da_iSmartDetails = new SqlDataAdapter();
+                da_iSmartDetails.SelectCommand = cmd_iSmartDetails;
+                DataSet dSet_iSmartDetails = new DataSet();
+                da_iSmartDetails.Fill(dSet_iSmartDetails);
+
+                logger.Info("cmd_iSmartDetails excuted by SqlDataAdapter()");
+
+                int header_count = dSet_iSmartDetails.Tables[iSmart_Constants.headerTbNo].Rows.Count;
+                int itemDetails_count = dSet_iSmartDetails.Tables[iSmart_Constants.itemTbNo].Rows.Count;
+                int historyDetails_count = dSet_iSmartDetails.Tables[iSmart_Constants.historyTbNo].Rows.Count;
+                int purchaseGp_count = dSet_iSmartDetails.Tables[iSmart_Constants.purchaseGpTbNo].Rows.Count;
+                int sendForClr_count = dSet_iSmartDetails.Tables[iSmart_Constants.sendForClrTbNo].Rows.Count;
+
+                logger.DebugFormat("Row Count : Header table {0}, ItemDetails table {1}, HisatoryDetails table {2}, PurchaseGrp table {3} ,SendForClarifiaction table {4}", header_count.ToString(), itemDetails_count.ToString(), historyDetails_count.ToString(), purchaseGp_count.ToString(), sendForClr_count.ToString());
+                iSmartEntity is_Details = new iSmartEntity(itemDetails_count, purchaseGp_count, historyDetails_count, sendForClr_count);
+
+                if (header_count > 0)
+                {
+                    DataRow header_dr = dSet_iSmartDetails.Tables[iSmart_Constants.headerTbNo].Rows[0];
+                    is_Details.IS_headerDetails.PReqNo = PReqNo;
+                    is_Details.IS_headerDetails.Capex_Revenue = header_dr["CapexRevenue"].ToString();
+                    is_Details.IS_headerDetails.BorneBy = header_dr["borneby"].ToString();
+                    is_Details.IS_headerDetails.ProjectID = header_dr["projectid"].ToString();
+                    is_Details.IS_headerDetails.TotalUSDValue = Convert.ToDouble(header_dr["TotalUSDcost"]);
+                    is_Details.IS_headerDetails.PReqRemarks = header_dr["PREQReqRemarks"].ToString();
+                    is_Details.IS_headerDetails.RequestedBy = header_dr["Requestedby"].ToString();
+                    is_Details.IS_headerDetails.ActionByEmpNum = getISmartStatus(PReqNo);
+                    is_Details.IS_headerDetails.ActionByRole = header_dr["ActionByRole"].ToString();
+
+                    if (!Convert.IsDBNull(header_dr["Requesteddate"]))
+                    {
+                        is_Details.IS_headerDetails.RequestedDate = Convert.ToDateTime(header_dr["Requesteddate"]).ToString("U", CultureInfo.CreateSpecificCulture("en-US"));
+                    }
+                    if (!Convert.IsDBNull(header_dr["EndDate"]))
+                    {
+                        is_Details.IS_headerDetails.ProjectEndDate = Convert.ToDateTime(header_dr["EndDate"]).ToString("U", CultureInfo.CreateSpecificCulture("en-US"));
+                    }
+                    is_Details.IS_headerDetails.CompanyCode = header_dr["Companycode"].ToString();
+                    is_Details.IS_headerDetails.BU = header_dr["BUdesc"].ToString();
+                    is_Details.IS_headerDetails.AcceptanceCriteria = header_dr["acceptancecriteria"].ToString();
+                }
+                else
+                {
+                    //Error handling : For Invaild PReqNo
+                    is_Details.IS_headerDetails.ErrorCode = 31;
+                    is_Details.IS_headerDetails.ErrorMessage = "Invalid PReqNo";
+
+                    logger.DebugFormat("No rows returned from the Header table for the PreqNo : {0}", PReqNo.ToString());
+                    logger.Debug("ErrorCode = " + is_Details.IS_headerDetails.ErrorCode.ToString());
+                    logger.Debug("ErrorMessage = " + is_Details.IS_headerDetails.ErrorMessage);
+
+                    return is_Details;
+                }
+
+                int objCounter_item = 0;
+                foreach (DataRow item_dr in dSet_iSmartDetails.Tables[iSmart_Constants.itemTbNo].Rows)
+                {
+                    iSmartEntity.itemDetails is_Item = new iSmartEntity.itemDetails();
+                    is_Item.ItemTransactionId = Convert.ToInt32(item_dr["ItemLineNo"]);
+                    is_Item.ItemDescription = item_dr["ItemDescription"].ToString();
+                    is_Item.ItemSpecification = item_dr["itemspecification"].ToString();
+                    is_Item.Quantity = Convert.ToInt32(item_dr["requiredquantity"]);
+                    is_Item.UOM = item_dr["UOMDesc"].ToString();
+                    is_Item.UnitRate = Convert.ToDouble(item_dr["unitrate"]);
+                    is_Item.TotalCost = Convert.ToDouble(item_dr["Cost"]);
+                    is_Item.TotalCost_USD = Convert.ToDouble(item_dr["USDcost"]);
+                    if (!Convert.IsDBNull(item_dr["Reqbydate"]))
+                    {
+                        is_Item.RequiredFromDate = Convert.ToDateTime(item_dr["Reqbydate"]);
+                    }
+                    if (!Convert.IsDBNull(item_dr["Reqtilldate"]))
+                    {
+                        is_Item.RequiredTillDate = Convert.ToDateTime(item_dr["Reqtilldate"]);
+                    }
+                    is_Item.Plant = item_dr["PlantDesc"].ToString();
+                    is_Item.CostCenter = item_dr["CostCenterDesc"].ToString();
+                    is_Item.GLAccount = item_dr["GLAccountNoDesc"].ToString();
+
+                    logger.Debug("Item Details Row Count = " + objCounter_item.ToString());
+
+                    is_Details.IS_child_itemDetails[objCounter_item++] = is_Item;
+                }
+
+                int objCounter_history = 0;
+                foreach (DataRow history_dr in dSet_iSmartDetails.Tables[iSmart_Constants.historyTbNo].Rows)
+                {
+                    iSmartEntity.historyDetails is_history = new iSmartEntity.historyDetails();
+                    is_history.EmpName = history_dr["updatedby"].ToString();
+                    is_history.Role = history_dr["updatedByRole"].ToString();
+                    if (!Convert.IsDBNull(history_dr["UpdatedDate"]))
+                    {
+                        is_history.UpdatedDate = Convert.ToDateTime(history_dr["UpdatedDate"]).ToString("U", CultureInfo.CreateSpecificCulture("en-US"));
+                    }
+                    is_history.ActionPerformed = history_dr["ActionPerformedbyUser"].ToString();
+                    is_history.Remarks = history_dr["remarks"].ToString();
+                    
+                    logger.Debug("History Details Row Count = " + objCounter_history.ToString());
+
+                    is_Details.IS_child_historyDetails[objCounter_history++] = is_history;
+                }
+
+                int objCounter_purcahseGp = 0;
+                foreach (DataRow puchaseGrp_dr in dSet_iSmartDetails.Tables[iSmart_Constants.purchaseGpTbNo].Rows)
+                {
+                    iSmartEntity.purchaseGroupMembers is_purchaseGrp = new iSmartEntity.purchaseGroupMembers();
+                    is_purchaseGrp.EmpID = Convert.ToDouble(puchaseGrp_dr["userid"]);
+                    is_purchaseGrp.EmpName = puchaseGrp_dr["employeename"].ToString();
+
+                    logger.Debug("PurchaseGrp Memember Details Row Count = " + objCounter_purcahseGp.ToString());
+
+                    is_Details.IS_child_purchaseGroupMembers[objCounter_purcahseGp++] = is_purchaseGrp;
+                }
+
+                int objCounter_SendForClr = 0;
+                foreach (DataRow sendForClr in dSet_iSmartDetails.Tables[iSmart_Constants.sendForClrTbNo].Rows)
+                {
+                    iSmartEntity.SendForClarification is_sendForClr = new iSmartEntity.SendForClarification();
+                    is_sendForClr.RoleCode = sendForClr["rolecode"].ToString();
+                    is_sendForClr.RoleDescription = sendForClr["RoleDescription"].ToString();
+
+                    logger.Debug("Send For Clarification Details Row Count = " + objCounter_SendForClr.ToString());
+
+                    is_Details.IS_child_sendForClrDetails[objCounter_SendForClr++] = is_sendForClr;
+                }
+
+                logger.Debug("In Success case : ErrorCode = " + is_Details.IS_headerDetails.ErrorCode.ToString());
+                logger.Debug("In Success case : ErrorMessage = " + is_Details.IS_headerDetails.ErrorMessage);
+                logger.Info("Method : getPurchaseRequestDetails_DAL Stop");
+
+                //tsTrans.Commit();
+                return is_Details;
+
+            }
+            catch (SqlException dbEx)
+            {
+                logger.Fatal("Exception Occured At iSmart_DAL - getPurchaseRequestDetails_DAL");
+                logger.Debug("Exception Code : " + dbEx.Number.ToString());
+                logger.Debug("Exception Description : " + dbEx.Message.ToString());
+                logger.Error("Error : getPurchaseRequestDetails_DAL Stop");
+
+                //tsTrans.Rollback();
+                throw dbEx;
+            }
+            catch (Exception ex)
+            {
+                logger.Fatal("Exception Occured At iSmart_DAL - getPurchaseRequestDetails_DAL  : " + ex.Message.ToString());
+                logger.Error("Error : getPurchaseRequestDetails_DAL Stop");
+
+               // tsTrans.Rollback();
+               //throw new myCustomException(31, ex.Message);
+                throw ex;
+            }
+            finally
+            {
+                logger.Debug("Connection Status Closed ");
+
+                conn.Dispose();
+            }
+        }
+
+        /// <summary>
+        /// This function fetch iSmart status from the Database based on PReqNo 
+        /// </summary>
+        /// <param name="PReqNo"></param>
+        /// <returns>
+        /// <paramref name="status"/>
+        /// </returns>
+        /// <history>
+        ///     Hari haran      08/05/2012      created
+        /// </history>
+
+        public string getISmartStatus(string PReqNo)
+        {
+            try
+            {
+            
+                logger.Info("Method : getISmartStatus Start");
+                logger.Debug("PReqNo value : " + PReqNo);
+
+                databaseLayer dbConStr = new databaseLayer();
+                string connStr = dbConStr.connectionInfo;
+
+                logger.Debug("Connection string : " + connStr);
+
+                SqlConnection conn = new SqlConnection(connStr);
+
+                if (conn.State == System.Data.ConnectionState.Closed)
+                {
+                    conn.Open();
+                    logger.Debug("Connection Status opened ");
+                }
+
+                string validateQuery = "SELECT dbo.fnpendingwith (@PReqNo)";
+                SqlCommand validate_cmd = new SqlCommand(validateQuery, conn);
+                validate_cmd.Parameters.AddWithValue("@PReqNo", PReqNo);
+
+                QueryLog.CmdInfo(validate_cmd);
+
+                object result = validate_cmd.ExecuteScalar();
+
+                logger.Info("Method : getISmartStatus Stop");
+
+                return(result.ToString());
+
+            }
+            catch (SqlException dbEx)
+            {
+                logger.Fatal("Exception Occured At timesheet_DAL - getTimesheetStatus  : " + dbEx.Message.ToString());
+                logger.Error("Method : getISmartStatus Stop");
+
+                throw dbEx;
+            }
+            catch (Exception Ex)
+            {
+                logger.Fatal("Exception Occured At timesheet_DAL - getTimesheetStatus  : " + Ex.Message.ToString());
+                logger.Error("Method : getISmartStatus Stop");
+
+                throw Ex;
+            }
+        }
+
+
+        /// <summary>
+        /// This function Updates iSmart Details into the Database 
+        /// </summary>
+        /// <param name="is_entry_DAL"></param>
+        /// <returns>
+        /// <paramref name="result"/>
+        /// </returns>
+        /// <history>
+        ///     Hari haran      08/05/2012      created
+        /// </history>
+        
+        public iSmart_UpdateOutputEntity updatePurchaseRequest_DAL(iSmart_UpdateInputEntity[] is_entry_DAL)
+        {
+
+            logger.Info("Method : updatePurchaseRequest_DAL Start");
+
+            iSmart_UpdateOutputEntity result = new iSmart_UpdateOutputEntity();
+
+            databaseLayer dbConStr = new databaseLayer();
+            string connStr = dbConStr.connectionInfo;
+            logger.Debug("Connection string : " + connStr);
+            SqlConnection conn = new SqlConnection(connStr);
+            SqlTransaction Trans = null;
+            int updateOpflag = 0;
+
+            if (conn.State == System.Data.ConnectionState.Closed)
+            {
+                conn.Open();
+                logger.Debug("Connection Status opened ");
+            }
+
+            logger.Info("Connetion to the database established");
+
+            int objCount = 0;
+            SqlCommand update_cmd = new SqlCommand();
+            update_cmd.Connection = conn;
+            update_cmd.CommandType = CommandType.StoredProcedure;
+            Trans = conn.BeginTransaction("UpdateTransaction");
+            update_cmd.Transaction = Trans;
+            SqlDataReader dr;
+
+            string updateQuery = "ITRMSMobileUpdateData"; 
+
+            update_cmd.Parameters.Add("@PREQNo", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@Status", SqlDbType.Int);
+            update_cmd.Parameters.Add("@EmpID", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@PurGrpMember", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@ItemTransactionid", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@AucNo", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@CustomerPONum", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@Remarks", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@RejectedTo", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@AdditionalApprover", SqlDbType.VarChar);          
+            update_cmd.Parameters.Add("@Flag", SqlDbType.VarChar);
+            update_cmd.Parameters.Add("@Mobilerole", SqlDbType.VarChar);
+
+
+            try
+            {
+                               
+                foreach (iSmart_UpdateInputEntity isEntry_value in is_entry_DAL)
+                {
+                    logger.DebugFormat("Object Count in Input array is_entry_DAL : {0}",objCount.ToString());
+                                                          
+                    update_cmd.CommandText = updateQuery;
+                    update_cmd.Parameters["@PREQNo"].Value = isEntry_value.PReqNo;
+                    update_cmd.Parameters["@Status"].Value = isEntry_value.Status;
+                    update_cmd.Parameters["@EmpID"].Value = isEntry_value.EmpID;
+                    update_cmd.Parameters["@PurGrpMember"].Value = isEntry_value.PurGrpMember;
+                    update_cmd.Parameters["@ItemTransactionid"].Value = isEntry_value.ItemTransactionId;
+                    update_cmd.Parameters["@AucNo"].Value = isEntry_value.AucNo;
+                    update_cmd.Parameters["@CustomerPONum"].Value = isEntry_value.CustomerPONum;
+                    update_cmd.Parameters["@Remarks"].Value = isEntry_value.PReqRemarks;
+                    update_cmd.Parameters["@RejectedTo"].Value = isEntry_value.RejectedTo;
+                    update_cmd.Parameters["@AdditionalApprover"].Value = isEntry_value.AssignTo;                  
+                    update_cmd.Parameters["@Flag"].Value = "Details";
+                    update_cmd.Parameters["@Mobilerole"].Value = isEntry_value.ActionByRole;
+
+                    QueryLog.CmdInfo(update_cmd);
+
+                    dr = update_cmd.ExecuteReader();
+
+                    dr.NextResult();
+
+                    if (dr.HasRows)
+                    {
+                        dr.Read();
+                        if (dr["StatusFlag"].Equals(0))
+                        {
+                            dr.Close();
+                            updateOpflag = 0;
+                            objCount++;
+                        }
+                        else
+                        {
+                            dr.Close();
+                            updateOpflag = 1;
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        dr.Close();
+                        updateOpflag = 1;
+                        break;
+                    }
+                }
+
+                if (updateOpflag == 0)
+                {
+                    update_cmd.CommandText = updateQuery;
+                    update_cmd.Parameters["@PREQNo"].Value = is_entry_DAL[0].PReqNo;
+                    update_cmd.Parameters["@Status"].Value = is_entry_DAL[0].Status;
+                    update_cmd.Parameters["@EmpID"].Value = is_entry_DAL[0].EmpID;
+                    update_cmd.Parameters["@PurGrpMember"].Value = is_entry_DAL[0].PurGrpMember;
+                    update_cmd.Parameters["@ItemTransactionid"].Value = is_entry_DAL[0].ItemTransactionId;
+                    update_cmd.Parameters["@AucNo"].Value = is_entry_DAL[0].AucNo;
+                    update_cmd.Parameters["@CustomerPONum"].Value = is_entry_DAL[0].CustomerPONum;
+                    update_cmd.Parameters["@Remarks"].Value = is_entry_DAL[0].PReqRemarks;
+                    update_cmd.Parameters["@RejectedTo"].Value = is_entry_DAL[0].RejectedTo;
+                    update_cmd.Parameters["@AdditionalApprover"].Value = is_entry_DAL[0].AssignTo;
+                    update_cmd.Parameters["@Mobilerole"].Value = is_entry_DAL[0].ActionByRole;                    
+                    update_cmd.Parameters["@Flag"].Value = "Header";
+
+                    logger.Info("Updating the Header Details of iSmart UpdateInput Entity");
+                    QueryLog.CmdInfo(update_cmd);
+
+                    dr = update_cmd.ExecuteReader();
+
+                    dr.NextResult();
+
+                    if (dr.HasRows)
+                    {                        
+                        
+                        dr.Read();
+                        if (dr["StatusFlag"].Equals(0))
+                        {
+                            dr.Close();
+                            Trans.Commit();
+                            result.StatusFlag = 0;
+                            result.Message = iSmart_Constants.Success;
+                        }
+                        else
+                        {
+                            dr.Close();
+                            Trans.Rollback("UpdateTransaction");
+                            result.StatusFlag = 1;
+                            result.Message = iSmart_Constants.Error; 
+                        }
+                    }
+                    
+                    logger.Info("Operation : Update operation executed successfully");
+                }
+                else
+                {
+                    Trans.Rollback("UpdateTransaction");
+                    result.StatusFlag = 1;
+                    result.Message = iSmart_Constants.Error;    
+  
+                    logger.Error("Operation : Update Error - Invalid parameter values");                   
+                }                      
+
+                logger.Info("Method : updateiSmartEntry_DAL Stop");
+
+                return result;
+            }
+            catch (SqlException dbEx)
+            {
+                logger.Fatal("SQL Exception Occured At iSmart_DAL - updatePurchaseRequest_DAL  : ");
+                logger.Error("Exception Code : " + dbEx.Number.ToString());
+                logger.Error("Exception Description : " + dbEx.Message.ToString());
+                logger.Error("Error : updatePurchaseRequest_DAL Stop");
+                try
+                {
+                    logger.Debug("Tranasction Rollback Executed");
+                    Trans.Rollback("UpdateTransaction");
+                }
+                catch (Exception ex2)
+                {
+                    logger.Error("Tranasction Rollback Failed : " + ex2.Message.ToString());
+                    //throw ex2;
+                }
+                throw dbEx;
+            }
+            catch (Exception ex)
+            {
+                logger.Fatal("Exception Occured At iSmart_DAL - updatePurchaseRequest_DAL  : " + ex.Message.ToString());
+                logger.Error("Method : updatePurchaseRequest_DAL Stop");
+
+                try
+                {
+                    logger.Debug("Tranasction Rollback Executed");
+                    Trans.Rollback("UpdateTransaction");
+                }
+                catch (Exception ex2)
+                {
+                    logger.Error("Tranasction Rollback Failed : "+ex2.Message.ToString());
+                    //throw ex2;
+                }
+                //throw new myCustomException(32, ex.Message);
+                throw ex;
+            }
+            finally
+            {
+                logger.Debug("Connection Status Closed ");
+
+                conn.Dispose();
+            }
+        }
+    }
+}

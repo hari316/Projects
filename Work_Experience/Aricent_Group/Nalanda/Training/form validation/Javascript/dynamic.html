@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<TITLE> Details </TITLE>
+
+<script type = "text/javascript">
+		
+        function numbersonly(e)
+		{ 
+		  var ucode=e.charCode? e.charCode: e.keyCode;
+		  if(ucode != 8)
+		  {
+             if(ucode<48||ucode>57)
+			 {
+			  alert("Only Numeric Values");
+			  return false;
+		     }
+		  }
+		}
+
+		function lengthlimit(len)
+		{
+           if(document.forms["formality"]["id"].value.length > len)
+		   {
+		    alert("Error: Exceeding length limit of ID");
+            document.forms["formality"]["id"].value = document.forms["formality"]["id"].value.substring(0, len);
+		   }
+		}
+
+		function clearadd(val)
+		{
+          document.forms["formality"][val].value="";
+		}
+   
+        function dispall()
+		{
+          var strAll,sexVar,hobVar;
+          
+		  hobVar="";
+
+          var checkEmail=document.forms["formality"]["emid"].value;
+          var atpos=checkEmail.indexOf("@");  
+          var dotpos=checkEmail.lastIndexOf(".");
+
+		  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=checkEmail.length)
+           {
+              alert("Not a valid e-mail address");
+              return false;
+           }
+      	  
+           var pwd=document.forms["formality"]["pwd"].value
+           var conpwd=document.forms["formality"]["conpwd"].value
+ 
+           if(pwd.length < 6)
+		   {
+             alert("Password should contain atleast 6 Characters");
+			 return false;
+		   }
+
+		   if(pwd != conpwd)
+		   {
+             alert("Password Mismatch");
+			 return false;
+		   }
+
+		  if(document.forms["formality"]["sex"]["m"].checked)
+		  sexVar="Male";
+
+		  else if(document.forms["formality"]["sex"]["f"].checked)
+		  sexVar="Female";
+		  
+
+		  if(document.forms["formality"]["hobbies"]["music"].checked)
+           hobVar=hobVar+"Music" + " ";
+		  if(document.forms["formality"]["hobbies"]["sports"].checked)
+           hobVar=hobVar+"Sports" + " "; 
+		  if(document.forms["formality"]["hobbies"]["social"].checked)
+           hobVar=hobVar+"Socializing" + " ";  
+		  if(document.forms["formality"]["hobbies"]["paint"].checked)
+		   hobVar=hobVar+"Painting" + " ";
+		   
+		  strAll="ID: " + document.forms["formality"]["id"].value + "\n";
+		  strAll=strAll + "Name: " + document.forms["formality"]["name"].value +  "\n" + "City: " + document.forms["formality"]["city"].value +  "\n" + "State: " + document.forms["formality"]["state"].value +  "\n" + "Address: " + document.forms["formality"]["add"].value + "\n" + "Sex: " + sexVar +  "\n" + "Hobbies: " + hobVar + "\n" + "E-mail: " + document.forms["formality"]["emid"].value + "\n";
+
+		  alert(strAll);
+
+		}
+
+</script>
+
+</HEAD>
+
+<BODY>
+<h2>Customer Details</h2>
+
+<form name="formality">
+<table name="test" border=0>
+
+<tr><td>Customer ID</td><td ><input style="width: 250px;" type="text" name="id" value="Enter ID (type: numeric, length: 4)" onclick="clearadd('id')" onkeypress="return numbersonly(event)" onkeyup="return lengthlimit(4)" /></td></tr>
+
+<tr><td>Name</td><td><input style="width: 250px;" type="text" name="name" value="Enter Name" onclick="clearadd('name')" /></td></tr>
+
+<tr><td>City</td><td><select name="city"><option value="Bangalore">Bangalore</option><option value="Chennai">Chennai</option><option value="Mumbai">Mumbai</option><option value="Kolkata">Kolkata</option><option value="New Delhi">New Delhi</option><option value="Hyderabad">Hyderabad</option></select></td></tr>
+
+<tr><td>State</td><td><select name="state"><option value="Karnataka">Karnataka</option><option value="Tamil Nadu">Tamil Nadu</option><option value="Maharashtra">Maharashtra</option><option value="West Bengal">West Bengal</option><option value="Delhi">Delhi</option><option value="Andhra Pradesh">Andhra Pradesh</option></select></td></tr>
+
+<tr><td>Address</td><td><textarea style="height: 100px; width: 200px;" cols="10" name="add" value="" onclick="clearadd('add')" >Enter address</textarea></td></tr>
+
+<tr><td>Sex</td><td><input type="radio" name="sex" value="Male" id="m" /></td><td><input type="radio" name="sex" value="Female" id="f" /></td></tr>
+<tr><td> </td><td>Male</td><td>Female</td></tr>
+
+<tr><td>Hobbies</td><td><input type="checkbox" name="hobbies" id="music" value="music" />Music</br>
+                        <input type="checkbox" name="hobbies" id="sports" value="sports" />Sports</br>
+						<input type="checkbox" name="hobbies" id="social" value="socializing" />Socializing</br>
+						<input type="checkbox" name="hobbies" id="paint" value="painting" />Painting</br></td></tr>
+
+<tr><td>Email ID </td><td><input style="width: 250px;" type="text" name="emid" value="                     id@example.com" onclick="clearadd('emid')" /></td></tr>
+
+<tr><td>Password</td><td><input style="width: 200px;" type="password" name="pwd" value="examplepassword" onclick="clearadd('pwd')" /></td></tr>
+
+<tr><td>Confirm Password</td><td><input style="width: 200px;" type="password" name="conpwd" value="examplcpassword" onclick="clearadd('conpwd')" /></td></tr>
+
+<tr><td><input type="button" value="Submit" onclick="return dispall()" /></td><td><input type="reset" value="Reset" /></td></tr>
+
+</table>
+</form>
+
+</BODY>
+</HTML>

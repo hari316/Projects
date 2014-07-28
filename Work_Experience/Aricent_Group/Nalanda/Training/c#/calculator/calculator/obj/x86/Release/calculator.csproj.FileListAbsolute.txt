@@ -1,0 +1,5 @@
+C:\Documents and Settings\bgh29309\Desktop\calculator\calculator\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\Desktop\calculator\calculator\bin\Release\calculator.exe
+C:\Documents and Settings\bgh29309\Desktop\calculator\calculator\bin\Release\calculator.pdb
+C:\Documents and Settings\bgh29309\Desktop\calculator\calculator\obj\x86\Release\calculator.exe
+C:\Documents and Settings\bgh29309\Desktop\calculator\calculator\obj\x86\Release\calculator.pdb

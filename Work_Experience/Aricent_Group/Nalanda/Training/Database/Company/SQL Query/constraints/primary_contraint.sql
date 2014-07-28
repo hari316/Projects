@@ -1,0 +1,1 @@
+alter table DEPT_LOCATIONS add constraint PK_DNUMBER_DLOCATIONS primary key(Dnumber,Dlocation)

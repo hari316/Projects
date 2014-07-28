@@ -1,0 +1,9 @@
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\bin\Debug\iSmart_SI.dll
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\bin\Debug\iSmart_SI.pdb
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\bin\Debug\iSmart_BL.dll
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\bin\Debug\log4net.dll
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\bin\Debug\utilities.dll
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\bin\Debug\iSmart_BL.pdb
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\obj\Debug\iSmart_SI.dll
+C:\Documents and Settings\bgh29309\My Documents\MEAP\Supervisor Change\SCT_WebService\SCT_SI\obj\Debug\iSmart_SI.pdb

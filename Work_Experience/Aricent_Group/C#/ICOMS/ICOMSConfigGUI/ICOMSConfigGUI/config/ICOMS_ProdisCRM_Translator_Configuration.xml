@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<serviceconfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ICOMS_ProdisCRM_Translator_Configuration.xsd">
+  <!-- Mutiple Sites. Each site for a ICOMS server. Max 22 sites supported -->
+  <!-- 
+      DD/MM/YYYY        -     Comments
+      15/06/2012        -  Added BAckup CRM Info
+  -->
+  <sites>
+    <site id="111" name="siteid1">
+      <listenerAddress>10.204.255.6</listenerAddress>
+      <listenerPort>12000</listenerPort>
+      <!-- If CustomerIdFlag is true then parse customer id with site id else do not -->
+      <CustomerIdFlag>true</CustomerIdFlag>
+      <DeviceIdFormat>1</DeviceIdFormat>
+      <NativeFormat4cFlag>false</NativeFormat4cFlag>
+    </site>
+    <site id="112" name="siteid2">
+      <listenerAddress>10.204.255.6</listenerAddress>
+      <listenerPort>13000</listenerPort>
+      <CustomerIdFlag>true</CustomerIdFlag>
+      <DeviceIdFormat>2</DeviceIdFormat>
+      <NativeFormat4cFlag>false</NativeFormat4cFlag>
+    </site>
+    <site id="113" name="siteid3">
+      <listenerAddress>10.204.255.6</listenerAddress>
+      <listenerPort>14000</listenerPort>
+      <CustomerIdFlag>true</CustomerIdFlag>
+      <DeviceIdFormat>3</DeviceIdFormat>
+      <NativeFormat4cFlag>false</NativeFormat4cFlag>
+    </site>
+    <site id="114" name="siteid4">
+      <listenerAddress>10.204.255.6</listenerAddress>
+      <listenerPort>15000</listenerPort>
+      <CustomerIdFlag>true</CustomerIdFlag>
+      <DeviceIdFormat>4</DeviceIdFormat>
+      <NativeFormat4cFlag>false</NativeFormat4cFlag>
+    </site>
+    <site id="115" name="siteid5">
+      <listenerAddress>10.204.255.6</listenerAddress>
+      <listenerPort>16000</listenerPort>
+      <CustomerIdFlag>true</CustomerIdFlag>
+      <DeviceIdFormat>5</DeviceIdFormat>
+      <NativeFormat4cFlag>false</NativeFormat4cFlag>
+    </site>
+  </sites>
+  <!-- Connection info for 4c interface (REST interface) including backup interface info -->
+  <CRMconnection>
+    <PrimaryURL>http://10.203.233.49:9100/CrmService</PrimaryURL>
+    <BackupURL>http://10.203.233.45:9100/CrmService</BackupURL>
+    <PrimaryCCI4cURL>http://10.203.233.49:9100/CrmService</PrimaryCCI4cURL>
+    <BackupCCI4cURL>http://10.203.233.45:9100/CrmService</BackupCCI4cURL>
+    <HTTPtimeout>1000</HTTPtimeout>
+    <RetryNumbers>3</RetryNumbers>
+    <RetryWaitDuration>2000</RetryWaitDuration>
+    <HTTPErrorCodes>500,400</HTTPErrorCodes>
+    <FailoverTime>4000</FailoverTime>
+  </CRMconnection>
+  <!-- Connection info for Load Balancer -->
+  <LoadBalancer>
+    <listenerAddress>10.204.255.6</listenerAddress>
+    <listenerPort>17000</listenerPort>
+  </LoadBalancer>
+  <vodpackage>
+    <TVODRestrictedPackageId>TVODRestrictedPackageId</TVODRestrictedPackageId>
+    <SVODRestrictedPackageId>SVODRestrictedPackageId</SVODRestrictedPackageId>
+    <AllVODRestrictedPackageId>AllVODRestrictedPackageId</AllVODRestrictedPackageId>
+  </vodpackage>
+</serviceconfiguration>

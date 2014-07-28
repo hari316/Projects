@@ -1,0 +1,1 @@
+select *from EMPLOYEE where Dno IN (select dno from EMPLOYEE  group by dno having COUNT(*)>1)
