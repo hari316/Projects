@@ -1,0 +1,25 @@
+Extra Credit:
+
+Using Levenshtein Distance Algorithm
+
+In Tika Assignment if none of the keyword list matches with the given file then we try to match the keyword(only long
+phrases) in file using levenshtein distance considering threshold value of 3.
+We avoid keyoword of length less than 5 as this may provide false hit for our assumed threshold value.
+
+Eg: Disc in Discuss is a match according to Livenstein Distance Algorithm which we dont want, hence we consider
+long keyword lengths like "Extraterrestrial" which can give a match for "Extra Terrestrial", "extraterritorial",
+"spaces" for "Spaceship" or Fly Object for Flying Object, which wont be possible using regular expression.
+
+The result is we get 294 files found compared to out previous result of 212 files.
+
+Observation: 
+ - Increase in Keyword "extraterrestrial" from 5 to 30
+ - Increase in Keyword "spaceship" from 3 to 133
+ - Increase in Keyword "spacecraft" from 6 to 11
+
+Some of the New files found are:
+
+Malcolm Little -Malcolm X- New York File 11 of 41.pdf
+Manual of Investigative Operations and Guidelines -MIOG- Part 02 - 01 of 06.pdf
+DIOG 01 of 03 v.pdf
+domestic_investigations_and_operations_guide_part4.pdf

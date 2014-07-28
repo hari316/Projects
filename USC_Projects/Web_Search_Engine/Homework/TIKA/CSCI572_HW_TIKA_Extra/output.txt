@@ -1,0 +1,22 @@
+Keyword(s) used: UFO, disc, MUFON, saucer, Ufology, Martian, spaceship, spacecraft, flying disc, ghost rockets, flying object, flying saucer, extraterrestrial, unidentified aerial, unidentified object, extraterrestrial craft
+No of files processed: 2067
+No of files containing keyword(s): 294
+
+No of occurrences of each keyword:
+----------------------------------
+	UFO: 331
+	disc: 217
+	MUFON: 1
+	saucer: 438
+	Ufology: 1
+	Martian: 14
+	spaceship: 133
+	spacecraft: 11
+	flying disc: 91
+	ghost rockets: 2
+	flying object: 46
+	flying saucer: 142
+	extraterrestrial: 30
+	unidentified aerial: 2
+	unidentified object: 10
+	extraterrestrial craft: 0

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conspiracy Search</title>
+	<style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height:80%;width:80%;margin-left:120px;margin-top:10px;padding:4px;line-height:1.42857143;background-color:#fff;border:0px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+    </style>
+    <!-- Bootstrap -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBheAQq1Z6dqTD1s5MnMj5uzSx-AwXBWe8&sensor=true">
+    </script>
+	
+	<script type="text/javascript">
+	var callString = "";
+	var searchterm;
+	var markers = [],map;
+	var count = 0;
+	
+	function plotmap(jsonobject){
+		count = 0;
+        var mapOptions = {
+     		zoom: 4,
+            center: new google.maps.LatLng(41.2324,-98.4160),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+	
+	for(i=0;i<jsonobject.response.docs.length;i++){
+	var lat_long = jsonobject.response.docs[i].file_lat_long;
+	var filename = jsonobject.response.docs[i].file_name;
+	var res = lat_long.split(",");
+	if(!(lat_long === "0,0")){
+		addMarker(new google.maps.LatLng(res[0],res[1]),filename);
+		count++;
+	}
+	}
+      //google.maps.event.addDomListener(window, 'load', initialize)
+console.log(count);
+	  }
+   	function addMarker(latlng, myTitle) {
+	var marker = new google.maps.Marker({
+            position: latlng, 
+            map: map,
+            title: myTitle,
+	    url:'http://localhost:8080/solr/vault/'+ myTitle,
+            icon: "http://maps.google.com/mapfiles/marker.png"
+          });
+            google.maps.event.addListener(marker, 'click', function() {
+                window.location.href = marker.url;
+            });
+             
+        }
+
+		
+function callSolr(){
+	var myRadio = document.forms[0].myRadio;
+	
+			if (myRadio[0].checked){
+				QueryTerm = "AND";
+			}else{
+			QueryTerm = "OR";
+			}
+	
+	$(document).ready(function(){
+     searchterm= $("#searchValue").val();	
+});
+		searchstring = "";
+		var token =  searchterm.split(",");
+		for(i=0;i<token.length;i++){
+			searchstring += "file_content%3A%22"+token[i].toLowerCase()+"%22";
+			if(token.length>1 && i!=(token.length-1)){
+				searchstring += "+"+QueryTerm+"+";
+			}
+		}
+		//callString = "http://localhost:8080/solr/collection1/select?q=file_content%3Aalien&start=0&rows=176&wt=json&indent=true";
+		//callString = "http://localhost:8080/solr/collection1/select?q=*%3A*&start=0&rows=176&wt=json&indent=true";
+		callString = "http://localhost:8080/solr/collection1/select?q="+searchstring+"&start=0&rows=2067&wt=json&indent=true";
+		getJsonFromYelp(callString);
+}
+
+function getJsonFromYelp(callString){
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+	var resultText = xmlhttp.responseText;
+	//document.getElementById("myDiv").innerHTML=resultText;
+    obj = eval( '(' + resultText + ')' );
+	plotmap(obj);
+	}
+  }
+xmlhttp.open("GET",callString,true);
+xmlhttp.send();
+}
+
+</script>
+	
+  </head>
+  <body>
+  <br>
+<div class="row">
+<div class="col-lg-3"></div>
+  <div class="col-lg-6">
+   <div class="input-group">
+  <input type="text" class="form-control" id="searchValue">
+  <span class="input-group-addon"><form><input type="radio" name="myRadio" value="OR" checked="checked">&nbsp;Common Results&nbsp;&nbsp;
+<input type="radio" name="myRadio" value="AND">&nbsp;All Results</form></span>
+</div>
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+<br>
+<div class="row">
+<div class="col-lg-5"></div>
+  <div class="col-lg-2">
+<button type="button" class="btn btn-primary btn-lg btn-block" onclick="callSolr()">Search</button>
+</div></div>
+
+<!-- USED TO DISPLAY OUTPUT -->
+<div id="map-canvas"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

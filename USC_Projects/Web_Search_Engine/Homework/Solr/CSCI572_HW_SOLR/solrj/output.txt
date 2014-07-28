@@ -1,0 +1,28 @@
+Keyword(s) used: ufo, flying disc, disc, saucer, extraterrestrial craft, flying saucer, alien, extraterrestrial, spacecraft, spaceship, unidentified flying object, kennedy, john kennedy, assassinate, watergate, nixon, tapes, oswald, jfk, richard nixon, watergate burglars, vietnam war
+No of files processed: 2067
+No of files containing keyword(s): 0
+
+No of occurrences of each keyword:
+----------------------------------
+	ufo: 310
+	flying disc: 29
+	disc: 199
+	saucer: 200
+	extraterrestrial craft: 0
+	flying saucer: 57
+	alien: 2262
+	extraterrestrial: 8
+	spacecraft: 6
+	spaceship: 3
+	unidentified flying object: 0
+	kennedy: 2361
+	john kennedy: 13
+	assassinate: 83
+	watergate: 276
+	nixon: 315
+	tapes: 237
+	oswald: 105
+	jfk: 97
+	richard nixon: 48
+	watergate burglars: 2
+	vietnam war: 68
